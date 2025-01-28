@@ -21,11 +21,11 @@ function Navbar() {
   return (
     <nav className="w-screen py-4 max-md:px-4 fixed grid place-items-center z-[100]">
       <div className="container ">
-        <div className=" shadow-[0px_1px_10px_0px_#00000020] bg-white h-fit flex justify-between items-center p-2 rounded-2xl">
-          <div className="flex items-center gap-2 justify-center">
+        <div className=" shadow-[0px_1px_10px_0px_#00000020] bg-white h-fit flex justify-between items-center p-2 rounded-xl">
+          <a href="/#hero" className="flex items-center gap-2 justify-center">
             <img src={logo} alt="logo" className="w-[1.5rem] h-[1.5rem]" />
             <p className="text-xl font-semibold text-gray-800">Gzoft</p>
-          </div>
+          </a>
           <div className="max-md:hidden w-full flex items-center justify-end gap-6">
             {navLinks.map((link, index) => (
               <a
@@ -45,11 +45,11 @@ function Navbar() {
             >
               <div
                 id="bar1"
-                className=" absolute  rounded -translate-y-[5px] h-0.5 w-full bg-zinc-800"
+                className=" absolute  rounded -translate-y-[5px] h-0.5 w-full bg-zinc-700"
               ></div>
               <div
                 id="bar2"
-                className=" absolute  rounded translate-y-[5px] h-0.5 w-full bg-zinc-800"
+                className=" absolute  rounded translate-y-[5px] h-0.5 w-full bg-zinc-700"
               ></div>
             </div>
           </div>
