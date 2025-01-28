@@ -1,6 +1,7 @@
 //imgs
 import logo from "/logo.png";
-export { logo };
+import herouser from "/home/herousers.png";
+export { logo, herouser };
 
 //links
 

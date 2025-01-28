@@ -1,13 +1,11 @@
 @import "tailwindcss";
-
 :root {
   --bgr1: #f6f7ff;
-  --primary: #5456ED;
-  --secondary: #53A0ED;
+  --primary: #5456ed;
+  --secondary: #53a0ed;
 }
-
-body {
-  @apply font-sans bg-[var(--bgr1)];
+* {
+  font-family: "Urbanist", serif;
 }
 
 .primary-btn {
@@ -19,5 +17,9 @@ body {
 }
 
 .primary-btn-link {
-  @apply transition-colors ease-in duration-500 bg-linear-to-r from-[#0066FF] to-[#4FC3F2] hover:to-[#0066FF] hover:from-[#4FC3F2] text-white font-bold py-1 px-4 rounded-xl flex items-center justify-center gap-2 cursor-pointer;
+  @apply transition-colors ease-in duration-500 bg-linear-to-r from-[#0066FF] to-[#4FC3F2] hover:to-[#0066FF] hover:from-[#4FC3F2] text-white font-bold  rounded-xl flex items-center justify-center gap-2 cursor-pointer;
+}
+
+.gradient-text {
+  @apply bg-gradient-to-r from-[#0066FF] to-[#4FC3F2] text-transparent bg-clip-text;
 }

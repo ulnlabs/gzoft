@@ -19,8 +19,8 @@ function Navbar() {
     }
   };
   return (
-    <nav className="w-screen  py-2 fixed grid place-items-center">
-      <div className="container">
+    <nav className="w-screen py-4 max-md:px-4 fixed grid place-items-center">
+      <div className="container ">
         <div className=" shadow-[0px_1px_10px_0px_#00000020] bg-white h-fit flex justify-between items-center p-2 rounded-2xl">
           <div className="flex items-center gap-2 justify-center">
             <img src={logo} alt="logo" className="w-[1.5rem] h-[1.5rem]" />
@@ -31,16 +31,16 @@ function Navbar() {
               <a
                 key={index}
                 href={link.url}
-                className="text-gray-800 font-semibold hover:text-"
+                className="text-gray-800 font-semibold hover:text-blue-400"
               >
                 {link.name}
               </a>
             ))}
-            <PrimaryLink href={"#het started"} text={"Get Started"} />
+            <PrimaryLink href={"#het started"} text={"Get Started"} className={"px-4 py-1"} />
           </div>
           <div className="flex items-center justify-center gap-4">
             <div
-              className={`relative md:hidden  cursor-pointer w-[25px] h-[25px] flex items-center justify-center px-2 mr-2`}
+              className={`relative md:hidden  cursor-pointer w-[1.2rem] h-[1.2rem] flex items-center justify-center px-2 mr-2`}
               onClick={handleToggleMenu}
             >
               <div
@@ -56,7 +56,7 @@ function Navbar() {
         </div>
         <div
           id="navmobile"
-          className="bg-white mt-2 rounded-xl md:hidden h-0 overflow-hidden "
+          className=" shadow-[0px_1px_10px_0px_#00000020] bg-white mt-2 rounded-xl md:hidden h-0 overflow-hidden "
         >
           <div className="p-4 mt-2 flex flex-col gap-4">
             <AnimatePresence mode="wait">
