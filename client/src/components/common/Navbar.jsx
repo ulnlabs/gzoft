@@ -19,7 +19,7 @@ function Navbar() {
     }
   };
   return (
-    <nav className="w-screen py-4 max-md:px-4 fixed grid place-items-center">
+    <nav className="w-screen py-4 max-md:px-4 fixed grid place-items-center z-[100]">
       <div className="container ">
         <div className=" shadow-[0px_1px_10px_0px_#00000020] bg-white h-fit flex justify-between items-center p-2 rounded-2xl">
           <div className="flex items-center gap-2 justify-center">

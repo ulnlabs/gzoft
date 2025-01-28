@@ -4,8 +4,8 @@ import PrimaryLink from "../ui/PrimaryLink";
 
 function HeroHead() {
   return (
-    <div className="container top-0 left-0 w-full h-fit mt-[6rem] py-[2rem] flex items-center justify-start">
-      <div className="flex flex-col gap-4 items-start justify-center w-1/2">
+    <div className="container px-6 top-0 left-0 w-full h-fit mt-[6rem] py-[2rem] flex lg:items-center items-start max-lg:flex-col justify-start gap-6">
+      <div className="flex flex-col gap-4 items-start justify-center lg:w-1/2">
         <h1 className="text-4xl font-bold w-2/3 text-left text-gray-800">
           Empowering Careers Through Training{" "}
           <span className="gradient-text">✦ IT Expertise</span>
@@ -17,7 +17,7 @@ function HeroHead() {
           individuals with the skills to succeed in tech.
         </p>
       </div>
-      <div className="w-1/2 flex flex-col items-end justify-end">
+      <div className="lg:w-1/2 flex flex-col items-end justify-end">
         <div className="w-fit">
           <div className="flex items-start gap-2">
             <img src={herouser} alt="hero user" />
