@@ -7,7 +7,7 @@ function Card({ icon, title, content, className }) {
     >
       <img src={icon} alt={title} className="w-16 h-16" />
       <h2 className="text-xl font-bold mt-4">{title}</h2>
-      <p className="mt-2 text-zinc-800">{content}</p>
+      <p className="mt-2 text-zinc-800 text-justify">{content}</p>
     </div>
   );
 }

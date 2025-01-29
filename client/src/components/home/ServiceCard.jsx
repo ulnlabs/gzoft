@@ -1,7 +1,7 @@
 import React from "react";
 import Card from "./Card";
 
-function ServiceCard() {
+function  ServiceCard() {
   return (
     <div className="container mx-auto max-md:px-4 flex flex-col justify-center">
       <h1 className="text-4xl text-center py-4 pb-6">
@@ -18,16 +18,16 @@ function ServiceCard() {
         />
         <Card
           icon={"/home/icons/filled.svg"}
-          title={"IT Consultation"}
+          title={"Media Solutions"}
           content={
-            "Providing expert IT consulting services to streamline your operations, enhance infrastructure, and implement innovative solutions tailored to your business goals."
+            "Expert media consulting to optimize content strategy, boost digital presence, and deliver tailored solutions that align with your brand goals."
           }
         />
         <Card
           icon={"/home/icons/people.svg"}
-          title={"IT Consultation"}
+          title={"Training Wings"}
           content={
-            "Providing expert IT consulting services to streamline your operations, enhance infrastructure, and implement innovative solutions tailored to your business goals."
+            "Equipping individuals and teams with essential skills in IT and media through expert training programs designed to enhance capabilities and performance."
           }
         />
       </div>
