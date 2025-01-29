@@ -49,9 +49,9 @@ const footerLinks = [
 function Footer() {
   return (
     <div className="bg-[var(--bgr1)] sticky">
-      <div className="container mx-auto flex justify-between items-end max-md:flex-col ">
+      <div className="container mx-auto flex justify-between items-end max-sm:flex-col pt-50 pb-20 ">
         <div className="shadow-lg bg-[var(--bgr1)] p-4"></div>
-        <div className="flex flex-col items-start justify-start md:items-end md:justify-end">
+        <div className="flex flex-col items-start justify-start md:items-end md:justify-end ">
           <div className="flex text-sm">
             {media.map((item) => (
               <a
