@@ -31,7 +31,7 @@ const ServiceResult = () => {
   ];
   return (
     <div className=" pt-[8rem] flex lg:flex-row flex-col  gap-20 justify-start mx-auto w-[73%] ">
-      <div className="relative bg-[url('/home/Service/Result.png')] bg-cover rounded-2xl w-full">
+      <div className="relative bg-[url('/home/Service/Result.png')] min-h-[400px] bg-cover rounded-2xl w-full">
         <div className="absolute -left-[7%] top-[8%] shadow  bg-white px-7 py-6 rounded-2xl">
           <p className="text-center font-semibold">January 2025 </p>
           <div className="flex items-center gap-2">
@@ -68,7 +68,7 @@ const ServiceResult = () => {
               <img src={icon} alt="" className="size-[32px]" />
               <div className=" ">
                 <h4 className="text-xl font-bold">{title}</h4>
-                <p className="text-lg ">{content}</p>
+                <p className="text-lg text-justify ">{content}</p>
               </div>
             </div>
           ))}
