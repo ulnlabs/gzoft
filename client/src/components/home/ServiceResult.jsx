@@ -30,7 +30,7 @@ const ServiceResult = () => {
     },
   ];
   return (
-    <div className=" pt-[8rem] flex lg:flex-row flex-col  gap-20 justify-start mx-auto w-[73%] ">
+    <div className=" pt-[6rem] flex lg:flex-row flex-col  gap-20 justify-start mx-auto w-[73%] ">
       <div className="relative bg-[url('/home/Service/Result.png')] min-h-[400px] bg-cover rounded-2xl w-full">
         <div className="absolute -left-[7%] top-[8%] shadow  bg-white px-7 py-6 rounded-2xl">
           <p className="text-center font-semibold">January 2025 </p>
