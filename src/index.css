@@ -2,4 +2,10 @@
 
 *{
     font-family: "Unbounded", sans-serif;
+    color: #fff;
+}
+
+
+@theme{
+    --color-primary:"#f3c614";
 }
