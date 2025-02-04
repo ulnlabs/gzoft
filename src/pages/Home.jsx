@@ -1,10 +1,10 @@
 import React from "react";
-import FaqSingle from "../components/common/FaqSingle";
+import Tag from "../components/common/Tag";
 
 function Home() {
   return (
     <div className="flex items-center justify-center w-screen h-screen bg-[#111111] ">
-      <FaqSingle />
+      <Tag />
     </div>
   );
 }

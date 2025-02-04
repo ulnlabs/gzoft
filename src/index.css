@@ -1,11 +1,17 @@
 @import "tailwindcss";
-
-*{
-    font-family: "Unbounded", sans-serif;
-    color: #fff;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-
+body {
+  font-family: var(--font-display);
+  background-color: #f9f9f9;
+  color: #333;
+}
 @theme{
-    --color-primary:"#f3c614";
+  --color-primary: #ff8636;
+  --font-display: "Unbounded", sans-serif;
+  --font-pop: "Poppins", sans-serif;
 }
+
