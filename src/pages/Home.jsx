@@ -1,11 +1,10 @@
 import React from "react";
-import Tag from "../components/common/Tag";
-import Navbar from "../components/common/Navbar";
+import Footer from "../components/common/Footer";
 
 function Home() {
   return (
-    <div className="flex items-center justify-center w-screen h-screen bg-[#111111] ">
-      <Navbar/>
+    <div className="flex items-end justify-center w-screen h-screen bg-[#111111] ">
+      <Footer />
     </div>
   );
 }
