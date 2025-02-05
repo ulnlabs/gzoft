@@ -1,13 +1,13 @@
 import React from "react";
 import { TiHome } from "react-icons/ti";
 
-function Tag() {
+function Tag({ icons = <TiHome />, text = "Text" }) {
   return (
-    <div className="border rounded-full border-white/30 bg-white/[.05] flex items-center justify-center">
-      <div className="logo text-primary">
-        <TiHome className="text-pretty" />
+    <div className="border rounded-full border-white/30 bg-white/[.05]">
+      <div className="flex items-center justify-center px-2 py-1 gap-2">
+        <div className="text-primary">{icons}</div>
+        <p className="text-zinc-100 font-popins uppercase">{text}</p>
       </div>
-      <p className="text-zinc-100 font-popins">Home</p>
     </div>
   );
 }

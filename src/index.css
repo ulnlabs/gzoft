@@ -1,17 +1,16 @@
 @import "tailwindcss";
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 body {
   font-family: var(--font-display);
   background-color: #f9f9f9;
   color: #333;
 }
-@theme{
+@theme {
   --color-primary: #ff8636;
+  --color-dark: #262626;
   --font-display: "Unbounded", sans-serif;
   --font-pop: "Poppins", sans-serif;
 }
 
+.text-primary {
+  color: var(--color-primary);
+}
