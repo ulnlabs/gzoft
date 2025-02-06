@@ -13,7 +13,7 @@ function Hero() {
         <h1 className="flex gap-2 text-6xl max-md:text-5xl max-sm:text-3xl h-fit">
           <p>Marketing</p>
           <div className="bg-primary rounded-full">
-            <img src="/images/hero-mic.avif" className="w-[4rem]" alt="" />
+            <img src="/images/hero-mic.avif" className="w-[4rem] h-[4rem]" alt="" />
           </div>
           <p>Agency.</p>
         </h1>
