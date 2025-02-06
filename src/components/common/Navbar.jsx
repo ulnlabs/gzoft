@@ -103,10 +103,10 @@ function Navbar() {
     }
   }, [show]);
   return (
-    <nav className="fixed top-0 left-0 w-screen backdrop-blur-2xl max-lg:bg-black">
+    <nav className="fixed top-0 left-0 w-screen backdrop-blur-[3px] max-lg:bg-black z-10">
       <div className="w-full px-8 py-2 flex justify-between items-center ">
         <a href="/" className="cursor-pointer">
-          <img src="/logo.svg" alt="" className="h-10" />
+          <img src="/icons/logo.svg" alt="" className="h-10" />
         </a>
         <div className="max-lg:hidden bg-black rounded-full border flex  w-fit items-center justify-center p-2">
           {navLinks.map((items, i) => {

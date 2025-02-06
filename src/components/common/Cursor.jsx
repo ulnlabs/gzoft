@@ -8,7 +8,7 @@ function Cursor() {
     gsap.fromTo(
       "#playbtn",
       { fontSize: 12 },
-      { fontSize: 40, duration: .2, ease: "linear" }
+      { fontSize: 40, duration: 0.2, ease: "linear" }
     );
     gsap.to("#outerring", {
       padding: 22,
@@ -63,7 +63,7 @@ function Cursor() {
       </motion.svg>
       <div
         id="outerring"
-        className="absolute p-4 bg-white/10 rounded-full flex items-center justify-center"
+        className="absolute p-4 backdrop-blur rounded-full flex items-center justify-center"
       >
         <div
           id="innercircle"
