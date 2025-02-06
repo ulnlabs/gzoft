@@ -1,7 +1,7 @@
 import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Home from "./pages/Home";
-import About from "./pages/About";
+import Home from "/src/pages/Home";
+import About from "/src/pages/About";
 import Contact from "./pages/Contact";
 import Navbar from "./components/common/Navbar";
 import LenisScroll from "./components/common/LenisScroll";
