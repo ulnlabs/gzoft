@@ -14,7 +14,7 @@ function App() {
           <div className="w-full h-1/4 bg-black"></div>
         </div>
       </div>
-      <div className="relative z-0 w-full">
+      <div className="relative z-0 w-full overflow-x-hidden">
         <LenisScroll>
           <BrowserRouter>
             <Navbar />
