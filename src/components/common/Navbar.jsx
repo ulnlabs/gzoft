@@ -118,7 +118,7 @@ function Navbar() {
               >
                 <p
                   className={`${
-                    useLocation().pathname.startsWith(items.path)
+                    useLocation().pathname == items.path
                       ? "rounded-full text-primary bg-dark z-1"
                       : ""
                   } p-3 px-5 text-white text-xs relative flex items-center`}
