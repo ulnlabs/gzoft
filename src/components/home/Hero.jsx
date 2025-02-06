@@ -2,7 +2,7 @@ import React from "react";
 import Button from "../common/Button";
 function Hero() {
   return (
-    <div className="flex w-full flex-col items-center justify-start pt-[8rem] text-white">
+    <div className="flex w-full max-md:px-4 flex-col items-center justify-start pt-[8rem] text-white">
       <div className="flex flex-col items-center gap-2">
         <h1 className=" flex gap-2 text-6xl max-md:text-5xl max-sm:text-3xl">
           The Best{" "}

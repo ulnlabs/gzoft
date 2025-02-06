@@ -104,7 +104,7 @@ function Navbar() {
   }, [show]);
   return (
     <nav className="fixed top-0 left-0 w-screen backdrop-blur-[3px] max-lg:bg-black z-10">
-      <div className="w-full px-8 py-2 flex justify-between items-center ">
+      <div className="w-full max-md:px-4 px-8 py-2 flex justify-between items-center ">
         <a href="/" className="cursor-pointer">
           <img src="/icons/logo.svg" alt="" className="h-10" />
         </a>
