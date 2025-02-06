@@ -1,51 +1,72 @@
-import React, { useEffect, useRef, useState } from 'react';
-import gsap from 'gsap';
+import React, { useEffect, useRef, useState } from "react";
+import gsap from "gsap";
 
 const Brands = () => {
-  const containerRef = useRef(null);
-  
-  // Original brands list
-  const [brands,setBrands] = useState([
+  const row1Ref = useRef(null);
+  const row2Ref = useRef(null);
+  const brand  = [
     { name: "logo ipsum", icon: "/brands/logoipsum-348.svg" },
     { name: "logo ipsum", icon: "/brands/logoipsum-348.svg" },
     { name: "logo ipsum", icon: "/brands/logoipsum-348.svg" },
     { name: "logo ipsum", icon: "/brands/logoipsum-348.svg" },
-  ]);
-
-  // Duplicate the brands array for a seamless scroll.
-  
+  ]
+  const [brands, setBrands] = useState([...brand,...brand]);
 
   useEffect(() => {
-    const container = containerRef.current;
-    // Calculate the width of one complete set of images.
-    const totalWidth = container.scrollWidth / 2; 
-
-    gsap.to(container, {
-      x: `-=${totalWidth}px`,  // Move by one set's width
-      duration: 10,            // Adjust duration as needed
-      ease: "none",
-      repeat: -1,              // Infinite loop
-      modifiers: {
-        x: (x) => {
-          // Wrap the x position so the scroll is seamless
-          return (parseFloat(x) % totalWidth) + "px";
+    const animateRow = (ref, direction) => {
+      gsap.fromTo(
+        ref.current,
+        { x: direction === "left" ? "0%" : "-100%" },
+        {
+          x: direction === "left" ? "-100%" : "0%",
+          duration: 50,
+          ease: "linear",
+          repeat: -1,
         }
-      }
-    });
+      );
+    };
+
+    animateRow(row1Ref, "left"); // Moves left
+    animateRow(row2Ref, "right"); // Moves right
   }, []);
 
   return (
-    <div className="overflow-hidden relative border rounded-4xl w-full">
-      <div ref={containerRef} className="flex gap-3 w-max">
-        {duplicatedBrands.map(({ name, icon }, i) => (
-          <div key={i} className="bg-white/10 rounded-4xl h-fit w-fit">
-            <img 
-              src={icon} 
-              alt={name} 
-              className="px-10 py-3 w-[200px] h-[100px] object-contain" 
-            />
-          </div>
-        ))}
+    <div className="overflow-hidden relative border rounded-4xl w-full bg-black p-4">
+      <div className="relative w-full overflow-hidden">
+        <div ref={row1Ref} className="flex gap-3 w-max">
+          {[...brands, ...brands].map(({ name, icon }, i) => ( // Duplicating for smooth loop
+            <div key={i} className="bg-white/10 rounded-4xl h-fit w-fit">
+              <img
+                src={icon}
+                alt={name}
+                className="px-10 py-3 w-[200px] h-[100px] object-contain"
+              />
+            </div>
+          ))}
+           {[...brands, ...brands].map(({ name, icon }, i) => ( // Duplicating for smooth loop
+            <div key={i} className="bg-white/10 rounded-4xl h-fit w-fit">
+              <img
+                src={icon}
+                alt={name}
+                className="px-10 py-3 w-[200px] h-[100px] object-contain"
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div className="relative w-full overflow-hidden mt-4">
+        <div ref={row2Ref} className="flex gap-3 w-max">
+          {[...brands, ...brands].map(({ name, icon }, i) => ( // Duplicating for smooth loop
+            <div key={i} className="bg-white/10 rounded-4xl h-fit w-fit">
+              <img
+                src={icon}
+                alt={name}
+                className="px-10 py-3 w-[200px] h-[100px] object-contain"
+              />
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
