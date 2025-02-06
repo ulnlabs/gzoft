@@ -4,16 +4,16 @@ function Hero() {
   return (
     <div className="flex w-full max-md:px-4 flex-col items-center justify-start pt-[8rem] text-white">
       <div className="flex flex-col items-center gap-2">
-        <h1 className=" flex gap-2 text-6xl max-md:text-5xl max-sm:text-3xl">
+        <h1 className=" flex gap-2 text-6xl max-md:text-5xl max-sm:text-2xl">
           The Best{" "}
           <span className="bg-primary rotate-3">
             <p className="text-black -rotate-3">Digital</p>
           </span>
         </h1>
-        <h1 className="flex gap-2 text-6xl max-md:text-5xl max-sm:text-3xl h-fit">
+        <h1 className="flex gap-2 text-6xl max-md:text-5xl max-sm:text-2xl">
           <p>Marketing</p>
-          <div className="bg-primary rounded-full">
-            <img src="/images/hero-mic.avif" className="w-[4rem] h-[4rem]" alt="" />
+          <div className="bg-primary rounded-full h-10">
+            <img src="/images/hero-mic.avif" className="h-full w-full" alt="" />
           </div>
           <p>Agency.</p>
         </h1>
