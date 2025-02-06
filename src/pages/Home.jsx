@@ -1,11 +1,13 @@
 import React from "react";
-import Footer from "../components/common/Footer";
-import ReviewDetail from "../components/common/ReviewDetail";
+import Cursor from "../components/common/Cursor";
+import Hero from "../components/home/Hero";
+import HeroVi from "../components/home/HeroVi";
 
 function Home() {
   return (
-    <div className="flex items-end justify-center w-full min-h-screen bg-[#1d1d1d] flex-col ">
-      <ReviewDetail />
+    <div className="flex w-full min-h-screen flex-col ">
+      <Hero />
+      <HeroVi />
     </div>
   );
 }

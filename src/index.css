@@ -9,7 +9,7 @@ body {
   box-sizing: border-box;
 }
 @theme {
-  --color-primary: #ff8636;
+  --color-primary: #FFC6FE;
   --color-dark: #262626;
   --font-display: "Unbounded", sans-serif;
   --font-satoshi: "Satoshi", sans-serif;
