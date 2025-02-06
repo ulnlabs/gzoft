@@ -1,5 +1,5 @@
 import "./App.css";
-import { HashRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "/src/pages/Home";
 import About from "/src/pages/About";
 import Contact from "./pages/Contact";
@@ -16,14 +16,14 @@ function App() {
       </div>
       <div className="relative z-0 w-full overflow-x-hidden">
         <LenisScroll>
-          <HashRouter>
+          <BrowserRouter>
             <Navbar />
             <Routes>
               <Route path="/" element={<Home />} />
-              <Route path="about" element={<About />} />
-              <Route path="contact" element={<Contact />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/contact" element={<Contact />} />
             </Routes>
-          </HashRouter>
+          </BrowserRouter>
         </LenisScroll>
       </div>
     </div>
