@@ -12,14 +12,14 @@ const Accordion = ({data}) => {
   };
 
   return (
-    <div className="w-full max-w-7xl  mx-auto space-y-3   bg-opacity-30 backdrop-blur-lg rounded-lg">
+    <div className="w-full max-w-7xl  mx-auto space-y-3    bg-opacity-30 backdrop-blur-lg rounded-lg">
       {data.map((item, index) => (
-        <div key={index} className="bg-gray-900/20 cursor-pointer hover:bg-white/5 transition duration-300   bg-opacity-50 backdrop-blur-md rounded-4xl p-4  overflow-hidden">
+        <div key={index} className="bg-gray-900/20 group hover:bg-white/12  cursor-pointer transition duration-300   bg-opacity-50 backdrop-blur-md rounded-4xl p-4  overflow-hidden">
           <button
-            className="  w-full flex justify-between cursor-pointer items-center p-4 text-white"
+            className="  w-full flex justify-between  cursor-pointer items-center p-4 text-white"
             onClick={() => toggleAccordion(index)}
           >
-            <h1 className="hover:translate-x-4 transition-transform duration-200">
+            <h1 className="group-hover:translate-x-4 transition-transform duration-200">
 
             {item.question}
             </h1>

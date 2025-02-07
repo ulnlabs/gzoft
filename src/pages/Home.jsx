@@ -1,14 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
 import Cursor from "../components/common/Cursor";
 import Hero from "../components/home/Hero";
 import HeroVi from "../components/home/HeroVi";
 import Acordian from "../components/common/Acordian"
 import Whyus from "../components/common/Whyus";
 import Project from "../components/common/Projects"
+import Toast from "../components/common/Toast"
+import DiscountPopup from "../components/common/Discountpopup";
 
 
 
 function Home() {
+  // const [mess,setmess]=useState("")
+  // const [messageType,setType]=useState("")
+  // const [showtoast,settoast]=useState(false)
+  // function toastmess(message){
+  //   setmess(message)
+  //   settoast(true)
+  //   setType("Success!!")
+  // }
+  // const [discount,setDiscount]=useState(false)
+  //  function popup(){
+      
+  //     setDiscount(true)
+      
+  //   }
+  
   return (
     <div className="flex w-full min-h-screen flex-col ">
       <Hero />
@@ -25,7 +42,15 @@ function Home() {
     { question: "Is SEO a one-time effort, or does it require ongoing maintenance?", answer: "SEO requires ongoing maintenance to adapt to search engine updates, competition, and changing user behaviors." }
   ]} />
       {/* < Whyus /> */}
-   
+      {/* <Toast toast={showtoast} message={mess} settoast={settoast} messagetype={messageType} />
+      <button onClick={()=>{toastmess("Form Successfully Submitted")}} className="cursor-pointer p-3 border ">
+        submitt
+      </button> */}
+      {/* <DiscountPopup discount={discount} setDiscount={setDiscount} />
+      <button className="border p-3" onClick={popup}>
+        Offers
+      </button>
+    */}
       </div>
     </div>
   );
