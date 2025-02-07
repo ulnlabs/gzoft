@@ -2,71 +2,58 @@ import React, { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 
 const Brands = () => {
-  const row1Ref = useRef(null);
-  const row2Ref = useRef(null);
-  const brand  = [
+  const containerRef = useRef(null);
+
+  const [brands] = useState([
     { name: "logo ipsum", icon: "/brands/logoipsum-348.svg" },
     { name: "logo ipsum", icon: "/brands/logoipsum-348.svg" },
     { name: "logo ipsum", icon: "/brands/logoipsum-348.svg" },
     { name: "logo ipsum", icon: "/brands/logoipsum-348.svg" },
-  ]
-  const [brands, setBrands] = useState([...brand,...brand]);
+    { name: "logo ipsum", icon: "/brands/logoipsum-348.svg" },
+    { name: "logo ipsum", icon: "/brands/logoipsum-348.svg" },
+    { name: "logo ipsum", icon: "/brands/logoipsum-348.svg" },
+    { name: "logo ipsum", icon: "/brands/logoipsum-348.svg" },
+  ]);
 
   useEffect(() => {
-    const animateRow = (ref, direction) => {
-      gsap.fromTo(
-        ref.current,
-        { x: direction === "left" ? "0%" : "-100%" },
-        {
-          x: direction === "left" ? "-100%" : "0%",
-          duration: 50,
-          ease: "linear",
-          repeat: -1,
-        }
-      );
-    };
+    const container = containerRef.current;
+    // The total width of one set of the items (since we duplicate for a seamless loop)
+    const totalWidth = container.scrollWidth / 2;
 
-    animateRow(row1Ref, "left"); // Moves left
-    animateRow(row2Ref, "right"); // Moves right
+    gsap.to(container, {
+      // Animate the container to move left by totalWidth pixels
+      x: `-=${totalWidth}px`,
+      duration: 10,
+      ease: "linear",
+      repeat: -1,
+      // Use a modifier to wrap the x value, ensuring a seamless loop
+      modifiers: {
+        x: (x) => {
+          // x comes in as a string like "-123.45px", so parse it into a number.
+          const xVal = parseFloat(x);
+          // Wrap the value between 0 and totalWidth.
+          // This keeps x within the bounds needed for a continuous scroll.
+          let wrapped = xVal % totalWidth;
+          if (wrapped < 0) wrapped += totalWidth;
+          return wrapped + "px";
+        }
+      }
+    });
   }, []);
 
   return (
-    <div className="overflow-hidden relative border rounded-4xl w-full bg-black p-4">
-      <div className="relative w-full overflow-hidden">
-        <div ref={row1Ref} className="flex gap-3 w-max">
-          {[...brands, ...brands].map(({ name, icon }, i) => ( // Duplicating for smooth loop
-            <div key={i} className="bg-white/10 rounded-4xl h-fit w-fit">
-              <img
-                src={icon}
-                alt={name}
-                className="px-10 py-3 w-[200px] h-[100px] object-contain"
-              />
-            </div>
-          ))}
-           {[...brands, ...brands].map(({ name, icon }, i) => ( // Duplicating for smooth loop
-            <div key={i} className="bg-white/10 rounded-4xl h-fit w-fit">
-              <img
-                src={icon}
-                alt={name}
-                className="px-10 py-3 w-[200px] h-[100px] object-contain"
-              />
-            </div>
-          ))}
-        </div>
-      </div>
-
-      <div className="relative w-full overflow-hidden mt-4">
-        <div ref={row2Ref} className="flex gap-3 w-max">
-          {[...brands, ...brands].map(({ name, icon }, i) => ( // Duplicating for smooth loop
-            <div key={i} className="bg-white/10 rounded-4xl h-fit w-fit">
-              <img
-                src={icon}
-                alt={name}
-                className="px-10 py-3 w-[200px] h-[100px] object-contain"
-              />
-            </div>
-          ))}
-        </div>
+    <div className="overflow-hidden relative border rounded-4xl w-full">
+      <div ref={containerRef} className="flex gap-3 w-max">
+        {/* Duplicate the brands for a continuous loop */}
+        {[...brands, ...brands].map(({ name, icon }, i) => (
+          <div key={i} className="bg-white/10 rounded-4xl h-fit w-fit">
+            <img
+              src={icon}
+              alt={name}
+              className="px-10 py-3 w-[200px] h-[100px] object-contain"
+            />
+          </div>
+        ))}
       </div>
     </div>
   );
