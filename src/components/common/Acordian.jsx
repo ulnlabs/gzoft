@@ -33,7 +33,7 @@ const Accordion = ({data}) => {
             transition={{ duration: 0.3 }}
             className="overflow-hidden text-gray-300 px-4"
           >
-            <p className="w-[70%]  px-10">{item.answer}</p>
+            <p className="w-full  px-10">{item.answer}</p>
           </motion.div>
         </div>
       ))}
