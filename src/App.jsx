@@ -29,7 +29,6 @@ function App() {
             </Routes>
           </BrowserRouter>
           
-        </LenisScroll>
         
       </div>
     </div>
