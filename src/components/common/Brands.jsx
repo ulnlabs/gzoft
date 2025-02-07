@@ -37,7 +37,7 @@ const Brands = () => {
   return (
     <div className="overflow-hidden relative border rounded-4xl w-full">
       <div ref={containerRef} className="flex gap-3 w-max">
-        {duplicatedBrands.map(({ name, icon }, i) => (
+        {brands.map(({ name, icon }, i) => (
           <div key={i} className="bg-white/10 rounded-4xl h-fit w-fit">
             <img 
               src={icon} 

@@ -4,6 +4,7 @@ import Home from "/src/pages/Home";
 import About from "/src/pages/About";
 import Contact from "./pages/Contact";
 import Navbar from "./components/common/Navbar";
+import Test from "./pages/Test"
 import LenisScroll from "./components/common/LenisScroll";
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             <Routes>
               <Route exact path="/" Component={Home} />
               <Route path="/contact" Component={Contact} />
+              <Route path="/test" Component={Test} />
               <Route path="/about" Component={About} />
             </Routes>
           </BrowserRouter>
