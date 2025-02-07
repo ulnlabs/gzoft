@@ -4,6 +4,7 @@ import Hero from "../components/home/Hero";
 import HeroVi from "../components/home/HeroVi";
 import Acordian from "../components/common/Acordian"
 import Whyus from "../components/common/Whyus";
+import Project from "../components/common/Projects"
 
 
 function Home() {
