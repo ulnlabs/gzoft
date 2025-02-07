@@ -7,6 +7,7 @@ import Whyus from "../components/common/Whyus";
 import Project from "../components/common/Projects"
 
 
+
 function Home() {
   return (
     <div className="flex w-full min-h-screen flex-col ">
@@ -24,6 +25,7 @@ function Home() {
     { question: "Is SEO a one-time effort, or does it require ongoing maintenance?", answer: "SEO requires ongoing maintenance to adapt to search engine updates, competition, and changing user behaviors." }
   ]} />
       {/* < Whyus /> */}
+   
       </div>
     </div>
   );
