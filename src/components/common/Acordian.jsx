@@ -1,18 +1,32 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 
 
 const Accordion = ({data}) => {
   const [openIndex, setOpenIndex] = useState(null);
-
+  const thisRef=useRef(null)
+  useGSAP(()=>{
+    gsap.fromTo(
+      thisRef.current.children,
+      { y: 100, opacity: 0 },
+      {
+        y: 0,
+        opacity: 1,
+        duration: .4,
+       stagger:.2
+      }
+    );
+  },[])
   const toggleAccordion = (index) => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
   return (
-    <div className="w-full space-y-3    bg-opacity-30 backdrop-blur-lg rounded-lg">
+    <div ref={thisRef} className="w-full space-y-3    bg-opacity-30 backdrop-blur-lg rounded-lg">
       {data.map((item, index) => (
         <div key={index} className="bg-gray-900/20 group hover:bg-white/12  cursor-pointer transition duration-300   bg-opacity-50 backdrop-blur-md rounded-4xl p-4  overflow-hidden">
           <button
