@@ -28,7 +28,7 @@ function About() {
               { question: "01. Our History", answer: "Key factors include keyword optimization, high-quality content, backlinks, mobile-friendliness, page speed, and user experience." },
               { question: "02. Our Mission", answer: "You can do SEO yourself with proper learning, but hiring an agency can save time and provide expertise to improve results faster." },
               { question: "03. Our Vision", answer: "SEO requires ongoing maintenance to adapt to search engine updates, competition, and changing user behaviors." }
-            ]} />
+            ]} />                                                                                                     
           </div>
 
         </div>

@@ -31,11 +31,8 @@ function App() {
               <Route path="/work" element={<Project />} />
               <Route path="/reviews" element={<Review />} />
               <Route path="/services" element={<Service />} />
-
               <Route path="/project/:projectName-info" element={<ProjectInfo />} />
-
-
-            </Routes>
+                                                                                                                              </Routes>
           </BrowserRouter>
           <Footer />
         </LenisScroll>
