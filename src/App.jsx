@@ -6,8 +6,8 @@ import Contact from "./pages/Contact";
 import Navbar from "./components/common/Navbar";
 import LenisScroll from "./components/common/LenisScroll";
 import Project from "./pages/Project";
-import CustomCursor from "./components/common/CustomCursor";
-import {  GlobalProvider } from "./context/GlobalContext";
+import Service from "./pages/Service";
+
 function App() {
   return (
     <div className="">
@@ -17,21 +17,19 @@ function App() {
           <div className="w-full  h-1/4 bg-black"></div>
         </div>
       </div>
-      <div className={`relative z-0 w-full overflow-x-hidden`}>
-        <GlobalProvider>
-          <LenisScroll>
-            <CustomCursor />
-            <BrowserRouter>
-              <Navbar />
-              <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/about" element={<About />} />
-                <Route path="/contact" element={<Contact />} />
-                <Route path="/project" element={<Project />} />
-              </Routes>
-            </BrowserRouter>
-          </LenisScroll>
-        </GlobalProvider>
+      <div className="relative z-0 w-full overflow-x-hidden">
+        <LenisScroll>
+          <BrowserRouter>
+            <Navbar />
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/project" element={<Project />} />
+              <Route path="/services" Component={Service} />
+            </Routes>
+          </BrowserRouter>
+        </LenisScroll>
       </div>
     </div>
   );
