@@ -39,7 +39,7 @@ function Review() {
       {
         reviews.map((item, key) => {
           return (
-            <div key={key} className=" group hover:border hover:bg-white/1 hover:border-white transition duration-300 md:col-span-6 col-span-12 h-fit border border-zinc-500 rounded-2xl p-4 bg-black/10 shadow-md">
+            <div key={key} className=" backdrop-blur-xs group hover:border hover:bg-white/1 hover:border-white transition duration-300 md:col-span-6 col-span-12 h-fit border border-zinc-500 rounded-2xl p-4 bg-black/10 shadow-md">
               <div className="">
                 <div className="flex justify-between ">
                   <div className="flex">
@@ -74,37 +74,6 @@ function Review() {
       }
 
 
-      {/* <div className="w-[500px] h-fit border border-zinc-500 rounded-2xl p-4 bg-black/10 shadow-md">
-      {
-        reviews.map((item, key) => {
-          return (
-            <div key={key} className="">
-              <div className="flex ">
-                {Array.from({ length: item.Ratings }).map((_, i) => (
-                  <TiStar key={i} color="orange" className="text-blue-500" />
-                ))}
-
-              </div>
-
-      <div className="py-0">
-        <p className="font-popins p-2 text-white/60 ">
-         {item.feedback}
-        </p>
-        <div className="border-t flex gap-4 border-zinc-500 pt-4">
-          <img src={item.profile} className="w-[60px] rounded-2xl " alt="" />
-          <div className="flex flex-col text-white gap-1">
-            <h1>{item.username}</h1>
-            <p className="uppercase text-xs text-zinc-700">{item.companyname}</p>
-          </div>
-        </div>
-      </div>
-            </div>
-          )
-        })
-
-      }
-    
-    </div> */}
     </div>
   );
 }

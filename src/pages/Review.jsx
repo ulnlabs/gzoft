@@ -1,6 +1,7 @@
 import React from "react";
 import ReviewDetail from "../components/common/Review";
-import Navbar from "../components/common/Navbar";
+import Footer from "../components/common/Footer"
+
 
 function Review() {
   return (
@@ -14,6 +15,7 @@ function Review() {
       <div className="py-[2rem] ">
 
       <ReviewDetail />
+      <Footer/>
       </div>
      
      
