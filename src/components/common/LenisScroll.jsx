@@ -11,7 +11,7 @@ function LenisScroll({ children }) {
       >
         {children}
       </ReactLenis>
-      <div className="ms:hidden">{children}</div>
+      <div className="sm:hidden">{children}</div>
     </div>
   );
 }
