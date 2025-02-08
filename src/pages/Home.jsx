@@ -7,6 +7,7 @@ import Branding from "../components/home/Branding";
 import ExpServ from "../components/home/ExpServ";
 import Works from "../components/home/Works";
 import Testimonials from "../components/home/Testimonials";
+import Specialist from "../components/home/Specialist";
 function Home() {
   return (
     <div className="flex w-full min-h-screen flex-col cursor-default ">
@@ -15,8 +16,9 @@ function Home() {
       <Services />
       <Branding />
       <ExpServ />
-      <Works />
+      {/* <Works /> */}
       <Testimonials />
+      <Specialist />
       <Faq />
     </div>
   );

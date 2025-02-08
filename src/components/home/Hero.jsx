@@ -1,8 +1,23 @@
 import React from "react";
 import Button from "../common/Button";
+import { motion } from "framer-motion";
 function Hero() {
   return (
-    <div className="flex w-full max-md:px-4 flex-col items-center justify-start pt-[8rem] text-white">
+    <motion.div
+      initial={{
+        opacity: 0,
+        y: -100,
+      }}
+      animate={{
+        opacity: 1,
+        y: 0,
+      }}
+      transition={{
+        duration: 0.6,
+        delay: 0.5,
+      }}
+      className="flex w-full max-md:px-4 flex-col items-center justify-start pt-[8rem] text-white"
+    >
       <div className="flex flex-col items-center gap-2">
         <h1 className=" flex gap-2 text-6xl max-md:text-5xl max-sm:text-2xl">
           The Best{" "}
@@ -26,7 +41,7 @@ function Hero() {
           <Button className={"md:hidden"} size={1} text="Get Started" />
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

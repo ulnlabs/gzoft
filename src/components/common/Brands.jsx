@@ -12,22 +12,19 @@ const Brands = () => {
     { name: "logo ipsum", icon: "/brands/logoipsum-348.svg" },
   ]);
 
-  // Duplicate the brands array for a seamless scroll.
   
 
   useEffect(() => {
     const container = containerRef.current;
-    // Calculate the width of one complete set of images.
     const totalWidth = container.scrollWidth / 2; 
 
     gsap.to(container, {
-      x: `-=${totalWidth}px`,  // Move by one set's width
-      duration: 10,            // Adjust duration as needed
+      x: `-=${totalWidth}px`,  
+      duration: 10,            
       ease: "none",
-      repeat: -1,              // Infinite loop
+      repeat: -1,              
       modifiers: {
         x: (x) => {
-          // Wrap the x position so the scroll is seamless
           return (parseFloat(x) % totalWidth) + "px";
         }
       }
