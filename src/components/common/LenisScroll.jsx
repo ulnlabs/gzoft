@@ -2,14 +2,17 @@ import React from "react";
 import { ReactLenis } from "lenis/react";
 function LenisScroll({ children }) {
   return (
-    <ReactLenis
-      options={{
-        duration: 2,
-      }}
-      root
-    >
-      {children}
-    </ReactLenis>
+    <div className="max-sm:hidden">
+      <ReactLenis
+        options={{
+          duration: 2,
+        }}
+        root
+      >
+        {children}
+      </ReactLenis>
+      <div className="ms:hidden">{children}</div>
+    </div>
   );
 }
 

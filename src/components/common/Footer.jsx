@@ -7,8 +7,8 @@ function Footer() {
     <footer className="w-full px-4 flex flex-col gap-4">
       <div className="flex justify-between gap-4 items-center max-lg:flex-col container mx-auto py-8">
         <div className="w-full flex items-center flex-col">
-          <h1 className=" text-9xl font-bold text-white">Let`s</h1>
-          <p className=" text-9xl text-primary -top-8 relative">Talk</p>
+          <h1 className=" text-9xl max-sm:6xl font-bold text-white">Let`s</h1>
+          <p className=" text-9xl max-sm:6xl text-primary -top-8 relative">Talk</p>
         </div>
         <div className="w-full">
           <form
