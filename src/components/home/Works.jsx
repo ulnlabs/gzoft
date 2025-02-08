@@ -17,30 +17,33 @@ function Works() {
         scrub: true,
       },
     });
-    gsap.fromTo("#workcard2", {
-      marginTop: 100,
-      scrollTrigger: {
-        trigger: "#works",
-        start: "top bottom",
-        end: "center top",
-        scrub: true,
-        markers:true
+    gsap.fromTo(
+      "#workcard2",
+      {
+        marginTop: 100,
+        scrollTrigger: {
+          trigger: "#works",
+          start: "top bottom",
+          end: "center top",
+          scrub: true,
+        },
       },
-    },{
-      marginTop: -10,
-      scrollTrigger: {
-        trigger: "#works",
-        start: "top bottom",
-        end: "center top",
-        scrub: true,
-        markers:true
-      },
-    });
+      {
+        marginTop: -10,
+        scrollTrigger: {
+          trigger: "#works",
+          start: "top bottom",
+          end: "center top",
+          scrub: true,
+        },
+      }
+    );
   });
   return (
-    <div 
-    id="works"
-    className="container mx-auto flex flex-col items-center justify-center gap-y-4 py-[4rem]">
+    <div
+      id="works"
+      className="container mx-auto flex flex-col items-center justify-center gap-y-4 py-[4rem]"
+    >
       <div className="flex items-center justify-center gap-4 flex-col">
         <Tag text="Works" />
         <h1 className="text-4xl font-bold text-center text-white max-md:text-2xl">
