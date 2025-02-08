@@ -4,6 +4,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import Button from "../common/Button";
 import { ScrollTrigger } from "gsap/all";
+import { motion } from "framer-motion";
 gsap.registerPlugin(ScrollTrigger);
 function Testimonials() {
   const testiref = useRef(null);
@@ -22,22 +23,17 @@ function Testimonials() {
       y: 0,
       duration: 0,
     });
-    gsap.from("#testimonials", {
-      y: 200,
-      opacity: 0,
-      scrollTrigger: {
-        trigger: "#testimonials",
-        start: "top 80%",
-        end: "5% top",
-      },
-    });
   });
   return (
-    <>
-      <div
-        id="testimonials"
-        className="max-h-screen w-full overflow-hidden relative flex flex-col items-center justify-start "
-      >
+    <motion.div
+      initial={{ y: 100 }}
+      whileInView={{ y: 0 }}
+      transition={{ duration: 0.5, delay: 0.2 }}
+      viewport={{
+        once: true,
+      }}
+    >
+      <div className="max-h-screen w-full overflow-hidden relative flex flex-col items-center justify-start ">
         <div className="max-sm:px-4 container min-h-full mx-auto  flex flex-col items-center justify-start gap-y-4 py-[4rem]">
           <div className="absolute w-6xl top-0 mx-auto h-12 rounded-b-full blur-3xl bg-primary"></div>
           <div className="h-full flex flex-col items-center justify-start">
@@ -66,28 +62,17 @@ function Testimonials() {
       <div className=" container mx-auto py-[4rem] max-lg:px-4">
         <div className="flex gap-8 max-lg:flex-col">
           <div className="w-full min-h-10 bg-dark text-center flex flex-col gap-4 rounded-2xl p-4">
-            <iframe
-              className="w-full rounded-2xl lg:h-[400px] h-[300px]"
-              src="https://www.youtube-nocookie.com/embed/ugSFr_ACcTw?si=2H83lZuGNPe6pEw_&amp;controls=0"
-              allowTransparency
-              referrerpolicy="strict-origin-when-cross-origin"
-            ></iframe>
+            <div className="w-full rounded-2xl lg:h-[400px] h-[300px]"></div>
             <div className="text-white text-sm">
               <h1>Magnus Hawthorne</h1>
               <p className="text-white/70 text-xs"> Owner, Bayleaf</p>
             </div>
           </div>
           <div className="w-full min-h-10 bg-dark text-center flex flex-col gap-4 rounded-2xl p-4">
-            <iframe
+            <div
               className="w-full rounded-2xl lg:h-[400px] h-[300px]"
               width="560"
-              src="https://www.youtube.com/embed/XXAcCHrQ6J0?si=EirLRQTtZsnQjMJQ"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-            ></iframe>
+            ></div>
             <div className="text-white text-sm">
               <h1>Thaddeus Montgomery</h1>
               <p className="text-white/70 text-xs">Owner, GoldGarden</p>
@@ -100,7 +85,7 @@ function Testimonials() {
           </a>
         </div>
       </div>
-    </>
+    </motion.div>
   );
 }
 
