@@ -4,7 +4,7 @@ import Brandings from "../common/Brandings";
 
 function Branding() {
   return (
-    <div className="container mx-auto flex flex-col items-center justify-center gap-2.5 py-[6rem]">
+    <div className="container max-md:px-4 mx-auto flex flex-col items-center justify-center gap-2.5 py-[6rem]">
       <Tag text="Best Tech Partner" />
       <h1 className="text-4xl text-center text-white my-4">
         Brands that trust us
