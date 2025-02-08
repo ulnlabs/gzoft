@@ -5,7 +5,7 @@ const card = ({ title, heading, description }) => {
     <div className='grid gap-2 max-w-[650px] py-8  rounded-4xl bg-white/10 px-10'>
       <Title text={title} />
       <h3 className='text-white text-2xl' >{heading}</h3>
-      <p className='text-white/60 font-satoshi'>{description} </p>
+      <p className='text-white/80 font-satoshi'>{description} </p>
     </div>
   )
 }
