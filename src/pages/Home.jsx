@@ -16,7 +16,7 @@ function Home() {
       <Services />
       <Branding />
       <ExpServ />
-      {/* <Works /> */}
+      <Works />
       <Testimonials />
       <Specialist />
       <Faq />
