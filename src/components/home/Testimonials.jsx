@@ -46,7 +46,7 @@ function Testimonials() {
             >
               <div ref={testirefheight} className="flex gap-4 flex-col">
                 {[1, 2, 3, 4].map((item, index) => (
-                  <Review />
+                  <Review className="col-start-4 col-span-4 " />
                 ))}
               </div>
               <div className="flex gap-4 flex-col">

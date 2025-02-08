@@ -1,6 +1,6 @@
 import React from "react";
 import { TiStar } from "react-icons/ti";
-function Review() {
+function Review({className=""}) {
   const reviews = [{
     Ratings: 2,
     feedback: "Working with Bright Horizon Marketing has been a revelation for our company. Their dedication to understanding our industry and target audience has led to remarkable growth in our online presence. With their expertise in SEO and digital marketing, we've seen a significant increase in website traffic and brand visibility. Bright Horizon Marketing truly delivers results, and I highly recommend their services to any business looking to thrive in the digital age.",
@@ -34,8 +34,10 @@ function Review() {
     logo:"https://framerusercontent.com/images/ODBXEmKEOwlEN62SmqJ6KAeyM.svg"
   }
   ]
+  console.log(className);
+  
   return (
-    <div className=" grid grid-cols-12 gap-x-4 space-y-3    ">
+    <div className={` grid grid-cols-12 gap-x-4 space-y-3   `}>
       {
         reviews.map((item, key) => {
           return (
