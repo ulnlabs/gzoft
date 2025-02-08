@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from "react";
-import Footer from "../components/common/Footer";
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
@@ -17,7 +16,7 @@ function Contact() {
       <h1 ref={heading} className="text-primary text-3xl py-6 font-bold text-center  opacity-100">
         Get in Touch with G-ZOFT
       </h1>
-      <section className="pt-[6rem] md:min-w-[900px] lg:min-w-[1200px] backdrop-blur-xs">
+      <section className="pt-[6rem] sm:container  backdrop-blur-xs">
         <section className="text-white  bg-white/5  col-span-7  rounded-4xl col-start-4">
           <section ref={box} className="grid grid-cols-2 gap-2 p-6  opacity-100">
             <section className=" p-10 bg-white/10 rounded-3xl flex flex-col gap-5 col-span-2 md:col-span-1">

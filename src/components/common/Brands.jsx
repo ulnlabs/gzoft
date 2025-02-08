@@ -4,7 +4,7 @@ const Brands = () => {
 
 
   return (
-    <div className="flex flex-wrap pt-5 gap-5">
+    <div className="flex flex-wrap pt-5 justify-center gap-5">
       {[1, 2, 3, 4, 5, 6].map((item, index) => (
         <div
           key={index}

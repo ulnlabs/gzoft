@@ -45,16 +45,16 @@ function FaqSingle({}) {
   return (
     <div
       id="faqcard"
-      className="w-[600px] h-auto p-3 flex flex-col gap-4 bg-white/10 rounded-2xl"
+      className="w-[600px] h-auto p-3 flex flex-col gap-4 text-gray-300 bg-white/10 rounded-2xl"
     >
       <div className="flex justify-between items-center">
         <h1 className="text-sm">What service do you offer?</h1>
         <button
           onClick={() => setShow(!show)}
-          className="bg-orange-400 p-2 rounded-lg cursor-pointer "
+          className="bg-primary p-2 rounded-lg cursor-pointer "
         >
           <div id="faqbtn" className="">
-            <FaAngleDown />
+            <FaAngleDown className="text-black"/>
           </div>
         </button>
       </div>
