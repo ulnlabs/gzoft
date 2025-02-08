@@ -2,7 +2,13 @@ import gsap from "gsap";
 import React, { useEffect, useState } from "react";
 import TeamIcons from "./TeamIcons";
 
-function Team() {
+function Team({
+  title = "CEO",
+  name = "Jimmy Smith",
+  position = "Founder",
+  image = "/images/team.avif",
+  links = ["#", "#", "#"],
+}) {
   const [isHovered, setIsHovered] = useState(false);
   const [toggle, setToggle] = useState(false);
   useEffect(() => {
@@ -68,16 +74,16 @@ function Team() {
           className="absolute  w-[102%] top-0 -left-[1%] flex items-end py-6 justify-between "
         >
           <h1 className="text-5xl font-bold text-primary drop-shadow-[1px_2px_30px_#000000] ">
-            CEO
+            {title}
           </h1>
           <p className="text-lg font-semibold text-white drop-shadow-[1px_2px_30px_#000000]">
-            Founder
+            {position}
           </p>
         </div>
         <div className="pt-20 w-full relative z-2 ">
           <img
             id="teamimg"
-            src="/images/team.avif"
+            src={image}
             className="h-[420px] mx-auto drop-shadow-[1px_2px_60px_#000000] saturate-0"
             alt=""
           />
@@ -89,16 +95,12 @@ function Team() {
           ></div>
         </div>
         <div className="absolute bottom-0 w-full h-20 bg-gradient-to-t from-black to-transparent z-2 flex items-center justify-center">
-          <TeamIcons toggle={toggle} setToggle={setToggle} />
+          <TeamIcons toggle={toggle} setToggle={setToggle} link={links} />
         </div>
       </div>
       <div className="w-full p-4 font-satoshi cursor-pointer rounded-3xl text-center overflow-hidden bg-white/5 relative border flex items-center justify-center flex-col">
-        <h1
-        className="text-white font-black text-xl"
-        >Jimmy Smith</h1>
-        <p
-        className="text-white/80 font-light"
-        >Founder of Company</p>
+        <h1 className="text-white font-black text-xl">{name}</h1>
+        <p className="text-white/80 font-light">Founder of Company</p>
       </div>
     </div>
   );
