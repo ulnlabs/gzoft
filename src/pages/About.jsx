@@ -42,13 +42,13 @@ function About() {
           James Andrews, the heart of Celestial Solutions. With a decade of digital marketing expertise, James's passion for innovation and dedication to clients have guided our journey. His strategic vision, client-centered approach, and knack for creative solutions shape our commitment to excellence.
         </p>
 
-        <div className=" flex xl:flew-row gap-14 xl:w-[80%] justify-around flex-col w-full xl:mx-auto  items-start">
-          <div  className=" w-full  scale-110" >
+        <div className=" flex xl:flew-row gap-14 xl:w-[80%] items-center justify-center flex-col md:flex-row w-full xl:mx-auto  ">
+          <div  className=" " >
             <FounderBanner />
           </div>
-          <div className=" pt-5 ">
+          <div className=" md:pt-26 ">
 
-            <p className="font-satoshi text-white/80">
+            <p className="font-satoshi text-white/80 ">
               J. Andrews, the driving force behind Celestial Solutions. With over a decade of experience in digital marketing, James's passion for innovation and dedication to client success have been the cornerstone of our agency's growth. His strategic vision and hands-on approach have propelled us to the forefront of the industry, while his commitment to transparency and integrity sets the tone for our team. As a respected leader and mentor, James inspires us to exceed expectations and deliver exceptional results for our clients every day.
             </p>
             <div className="pt-10 gap-4 flex flex-wrap w-[80%] justify-center md:justify-between    mx-auto">
