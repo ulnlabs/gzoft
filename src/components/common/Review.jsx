@@ -39,7 +39,7 @@ function Review() {
       {
         reviews.map((item, key) => {
           return (
-            <div key={key} className=" backdrop-blur-xs group hover:border hover:bg-white/1 hover:border-white transition duration-300 md:col-span-6 col-span-12 h-fit border border-zinc-500 rounded-2xl p-4 bg-black/10 shadow-md">
+            <div key={key} className=" group hover:border hover:bg-white/1 hover:border-white transition duration-300 md:col-span-6 col-span-12 h-fit border border-zinc-500 rounded-2xl p-4 bg-black/10 shadow-md">
               <div className="">
                 <div className="flex justify-between ">
                   <div className="flex">
@@ -74,6 +74,7 @@ function Review() {
       }
 
 
+      
     </div>
   );
 }

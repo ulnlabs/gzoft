@@ -6,8 +6,11 @@ import Contact from "./pages/Contact";
 import Navbar from "./components/common/Navbar";
 import LenisScroll from "./components/common/LenisScroll";
 import Project from "./pages/Project";
-import Review from "./pages/Review";
-import ProjectInfo from "./components/projects/ProjectInfo";
+import Service from "./pages/Service";
+import Footer from "./components/common/Footer";
+import Review from "./pages/Review"
+import ProjectInfo from "./components/projects/ProjectInfo"
+
 function App() {
   return (
     <div className="">
@@ -32,6 +35,7 @@ function App() {
 
             </Routes>
           </BrowserRouter>
+          <Footer />
         </LenisScroll>
       </div>
     </div>

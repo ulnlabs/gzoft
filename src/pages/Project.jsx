@@ -1,7 +1,6 @@
 import React from 'react'
 import Projects from '../components/common/Projects'
-import Footer from "../components/common/Footer"
-import Carsoal from "../components/common/Carosal"
+
 function Project() {
   const data=[
     {
@@ -19,8 +18,8 @@ function Project() {
         "/carosalimages/p2.jpg",
         "/carosalimages/p3.jpg",
       ],
-      Title: "content-writing-for-video-grapher",
-      Description: "Stellar Shots Videography is a boutique videography studio specializing in capturing memorable moments through cinematic storytelling."
+      Title: "content-writing",
+      Description: "capturing memorable moments through cinematic storytelling."
     },
     
 
@@ -37,7 +36,7 @@ function Project() {
           </div>
         </div>
         <Projects data={data} />
-        <Footer/>
+       
        
 
         

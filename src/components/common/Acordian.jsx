@@ -12,14 +12,14 @@ const Accordion = ({data}) => {
   };
 
   return (
-    <div className="w-full container mx-auto space-y-3    bg-opacity-30 backdrop-blur-lg rounded-lg">
+    <div className="w-full space-y-3    bg-opacity-30 backdrop-blur-lg rounded-lg">
       {data.map((item, index) => (
         <div key={index} className="bg-gray-900/20 group font-bold text-xl hover:bg-white/12 font-satoshi  cursor-pointer transition duration-300   bg-opacity-50 backdrop-blur-md rounded-4xl p-4  overflow-hidden">
           <button
             className="  w-full flex justify-between  cursor-pointer items-center p-4 text-white/80"
             onClick={() => toggleAccordion(index)}
           >
-            <h1 className="group-hover:translate-x-4 transition-transform duration-200">
+            <h1 className="group-hover:translate-x-4 transition-transform duration-200 max-md:text-sm">
 
             {item.question}
             </h1>
@@ -34,7 +34,7 @@ const Accordion = ({data}) => {
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: openIndex === index ? "auto" : 0, opacity: openIndex === index ? 1 : 0 }}
             transition={{ duration: 0.3 }}
-            className="overflow-hidden cursor-pointer text-gray-300 px-4"
+            className="overflow-hidden cursor-pointer font-satoshi text-gray-300 px-4 max-md:text-xs"
           >
             <p className="w-full  px-10">{item.answer}</p>
           </motion.div>

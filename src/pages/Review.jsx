@@ -1,11 +1,11 @@
 import React from "react";
-import ReviewDetail from "../components/common/Review";
-import Footer from "../components/common/Footer"
+import Review from "../components/common/Review";
 
 
-function Review() {
+
+function ReviewPage() {
   return (
-    <div className=" py-[4rem] container mx-auto">
+    <div className=" py-[6rem]  container mx-auto">
       <div className="flex justify-center text-center text-5xl mt-14   ">
         <h1 className=" text-white">
           Check Our Works With{" "}
@@ -13,9 +13,10 @@ function Review() {
         </h1>
       </div>
       <div className="py-[2rem] ">
+        <Review/>
 
-      <ReviewDetail />
-      <Footer/>
+     
+     
       </div>
      
      
@@ -23,4 +24,4 @@ function Review() {
   );
 }
 
-export default Review;
+export default ReviewPage;

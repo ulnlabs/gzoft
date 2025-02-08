@@ -4,8 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import Carousel from "./Carosal";
 
 function Projects({data}) {
-  
-  
+
   const navigate = useNavigate();
   return (
     <div>
