@@ -12,7 +12,7 @@ const Accordion = ({data}) => {
   };
 
   return (
-    <div className="w-full max-w-7xl  mx-auto space-y-3    bg-opacity-30 backdrop-blur-lg rounded-lg">
+    <div className="w-full container mx-auto space-y-3    bg-opacity-30 backdrop-blur-lg rounded-lg">
       {data.map((item, index) => (
         <div key={index} className="bg-gray-900/20 group hover:bg-white/12  cursor-pointer transition duration-300   bg-opacity-50 backdrop-blur-md rounded-4xl p-4  overflow-hidden">
           <button
