@@ -4,11 +4,11 @@ const Brands = () => {
 
 
   return (
-    <div className="flex flex-wrap pt-5 justify-center gap-5">
+    <div className="flex flex-wrap pt-5 md: justify-center gap-5">
       {[1, 2, 3, 4, 5, 6].map((item, index) => (
         <div
           key={index}
-          className="p-4 bg-white/10 rounded-3xl flex  items-center justify-center w-[180px]"
+          className="p-4 bg-white/10 rounded-3xl flex  items-center justify-center md:w-[100px] lg:w-[180px]"
         >
           <img
             src={`/images/brands/${item}.svg`}

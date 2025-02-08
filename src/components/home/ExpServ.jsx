@@ -49,34 +49,35 @@ const tinyTitle = [
 ];
 
 gsap.registerPlugin(ScrollTrigger);
+
 function ExpServ() {
-  useGSAP(() => {
-    gsap.from("#ball1", {
-      y: 80,
-      duration: 1,
-      scrollTrigger: {
-        trigger: "#ball1",
-        start: "top 80%",
-        end: "400% top",
-        scrub: true,
-      },
-    });
-    gsap.from("#ball3", {
-      y: 80,
-      duration: 1,
-      scrollTrigger: {
-        trigger: "#ball2",
-        start: "top 80%",
-        end: "400% top",
-        scrub: true,
-      },
-    });
-  });
+  useGSAP(()=>{
+    gsap.to("#ball1",{
+      y:80,
+      scrollTrigger:{
+        trigger:"#exp-serv",
+        start:"top 80%",
+        end:"bottom 30%",
+        scrub:1,
+      }
+    })
+    gsap.to("#ball3",{
+      y:80,
+      scrollTrigger:{
+        trigger:"#exp-serv",
+        start:"top 80%",
+        end:"bottom 30%",
+        scrub:1,
+      }
+    })
+  })
   return (
-    <div className="full relative bg-[url(/images/exp-service.avif)] bg-cover bg-center bg-no-repeat min-h-screen flex flex-col justify-between items-center pb-[4rem]">
+    <div 
+    id="exp-serv"
+    className="full relative bg-[url(/images/exp-service.avif)] bg-cover bg-center bg-no-repeat min-h-screen flex flex-col justify-between items-center pb-[4rem]">
       <div className="absolute h-full w-full bg-radial from-primary/50 to-black/50"></div>
       <div className="flex mx-auto w-fit mt-6 container max-lg:px-4 items-center justify-center">
-        <div className="flex items-center justify-center max-lg:flex-col">
+        <div className="flex items-center justify-center relative max-lg:flex-col left-2">
           <Stats
             id={"ball1"}
             num={"15+"}
@@ -90,7 +91,7 @@ function ExpServ() {
             sub={"Successful Projects"}
           />
         </div>
-        <div className="flex items-center justify-center max-lg:flex-col">
+        <div className="flex items-center justify-center max-lg:flex-col -left-2 relative">
           <Stats
             id={"ball3"}
             className={"relative "}
