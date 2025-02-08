@@ -5,6 +5,8 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Navbar from "./components/common/Navbar";
 import LenisScroll from "./components/common/LenisScroll";
+import Service from "./pages/Service";
+
 function App() {
   return (
     <div className="">
@@ -22,6 +24,7 @@ function App() {
               <Route exact path="/" Component={Home} />
               <Route path="/contact" Component={Contact} />
               <Route path="/about" Component={About} />
+              <Route path="/services" Component={Service} />
             </Routes>
           </BrowserRouter>
         </LenisScroll>
