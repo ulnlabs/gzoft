@@ -9,7 +9,7 @@ function Faq() {
       whileInView={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: 90 }}
       transition={{ duration: 0.5, delay: 0.2 }}
-      className="p-10"
+      className="p-10 container mx-auto max-lg:px-4"
     >
       <div
         className="
