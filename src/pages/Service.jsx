@@ -32,7 +32,7 @@ function Service() {
                 <h1 className="text-4xl font-bold text-white text-center pt-30 pb-30">Discover <br /> Our Services</h1>
             </header>
 
-            <div className="service-container grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-8 p-4">
+            <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-8 p-4">
                 {services.map((service, index) => (
                     <ServiceCard key={index} title={service.title} description={service.description} icon={service.icon} />
                 ))}
