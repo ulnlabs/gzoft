@@ -27,7 +27,7 @@ function Service() {
     ];
 
     return (
-        <div className="service-page">
+        <div className="service-page container mx-auto">
             <header className="service-header">
                 <h1 className="text-4xl font-bold text-white text-center pt-30 pb-30">Discover <br /> Our Services</h1>
             </header>
@@ -47,10 +47,10 @@ function Service() {
 
                 <div className="why-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8 p-4">
                     {whyChooseUs.map((item, index) => (
-                        <div key={index} className="bg-black border border-gray-700 rounded-lg p-6 shadow-md">
+                        <div key={index} className="bg-black/10 backdrop-blur-[2px] border border-gray-700 rounded-lg p-6 shadow-md">
                             <div className="text-orange-500 flex justify-center">{item.icon}</div>
                             <h3 className="text-xl font-semibold text-white mt-4">{item.title}</h3>
-                            <p className="text-gray-400 mt-2">{item.description}</p>
+                            <p className="text-gray-400 mt-2 font-satoshi">{item.description}</p>
                         </div>
                     ))}
                 </div>
