@@ -6,10 +6,11 @@ import Contact from "./pages/Contact";
 import Navbar from "./components/common/Navbar";
 import LenisScroll from "./components/common/LenisScroll";
 import Project from "./pages/Project";
-import Review from "./pages/Review";
-import ProjectInfo from "./components/projects/ProjectInfo";
-import Footer from "./components/common/Footer";
 import Service from "./pages/Service";
+import Footer from "./components/common/Footer";
+import Review from "./pages/Review"
+import ProjectInfo from "./components/projects/ProjectInfo"
+
 function App() {
   return (
     <div className="">
@@ -30,10 +31,10 @@ function App() {
               <Route path="/work" element={<Project />} />
               <Route path="/reviews" element={<Review />} />
               <Route path="/services" element={<Service />} />
-              <Route
-                path="/project/:projectName-info"
-                element={<ProjectInfo />}
-              />
+
+              <Route path="/project/:projectName-info" element={<ProjectInfo />} />
+
+
             </Routes>
           </BrowserRouter>
           <Footer />

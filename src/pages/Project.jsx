@@ -1,7 +1,7 @@
 import React from 'react'
 import Projects from '../components/common/Projects'
-import Footer from "../components/common/Footer"
-import Carsoal from "../components/common/Carosal"
+import {motion} from "framer-motion"
+
 function Project() {
   const data=[
     {
@@ -19,8 +19,8 @@ function Project() {
         "/carosalimages/p2.jpg",
         "/carosalimages/p3.jpg",
       ],
-      Title: "content-writing-for-video-grapher",
-      Description: "Stellar Shots Videography is a boutique videography studio specializing in capturing memorable moments through cinematic storytelling."
+      Title: "content-writing",
+      Description: "capturing memorable moments through cinematic storytelling."
     },
     
 
@@ -28,15 +28,33 @@ function Project() {
   ]
   return (
     <div className='min-h-screen p-8 container mx-auto'>
-        <div className=" pt-[8rem] text-5xl text-center ">
+        <motion.div
+        initial={{
+          opacity: 0,
+          y: -100,
+        }}
+        animate={{
+          opacity: 1,
+          y: 0,
+        }}
+        transition={{
+          duration: 0.6,
+          delay: 0.5,
+        }}
+         className=" pt-[8rem] text-5xl text-center ">
           <div className="">
           <h1 className='text-white'>
           Check Our Works With
           <span className=' block'>Real Results</span> 
           </h1>
           </div>
-        </div>
+        </motion.div>
         <Projects data={data} />
+       
+       
+
+        
+      
     </div>
   );
 }

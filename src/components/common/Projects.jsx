@@ -2,14 +2,27 @@ import { AiOutlineDoubleRight } from "react-icons/ai";
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Carousel from "./Carosal";
+import {motion} from "framer-motion"
 
 function Projects({data}) {
-  
-  
+
   const navigate = useNavigate();
   return (
     <div>
-      <div className="h-fit flex flex-col gap-y-4 py-5">
+      <motion.div
+       initial={{
+        opacity: 0,
+        y: 70,
+      }}
+      animate={{
+        opacity: 1,
+        y: 0,
+      }}
+      transition={{
+        duration: 1.0,
+        delay: 0.5,
+      }}
+       className="h-fit flex flex-col gap-y-4 py-5">
         {
           data.map((item, index) => {
             return (
@@ -36,7 +49,7 @@ function Projects({data}) {
             );
           })
         }
-      </div>
+      </ motion.div>
     </div>
   );
 }
