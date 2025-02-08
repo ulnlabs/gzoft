@@ -1,7 +1,7 @@
 import gsap from "gsap";
 import React, { useEffect, useState } from "react";
 import { TiArrowUp } from "react-icons/ti";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 const navLinks = [
   {
     id: 1,
@@ -131,12 +131,14 @@ function Navbar() {
           })}
         </div>
         <div className="max-lg:hidden">
-          <button className="flex group items-center justify-center bg-primary p-2 text-dark rounded-full text-xs">
+          <Link
+          to={"/contact"}
+          className="flex group cursor-pointer items-center justify-center bg-primary p-2 text-dark rounded-full text-xs">
             GET IN TOUCH{" "}
             <span>
               <TiArrowUp className="text-[25px] rotate-45 group-hover:rotate-90 ease-linear transition-all duration-200 rounded-full" />
             </span>
-          </button>
+          </ Link>
         </div>
         <div
           onClick={() => setShow(!show)}
@@ -175,16 +177,15 @@ function Navbar() {
                 </a>
               );
             })}
-            <a
-              href="/contact"
-              id="getInTouch"
+            <Link 
+              to="/contact"
               className="flex cursor-pointer group items-center justify-center bg-primary p-2 text-dark rounded-full text-xs"
             >
               GET IN TOUCH{" "}
               <span>
                 <TiArrowUp className="text-[25px] rotate-45 group-hover:rotate-90 ease-linear transition-all duration-200 rounded-full" />
               </span>
-            </a>
+            </Link>
           </div>
         </div>
       </div>

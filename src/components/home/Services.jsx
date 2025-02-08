@@ -8,6 +8,7 @@ import { motion } from "framer-motion";
 import { ScrollTrigger } from "gsap/all";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import { Link } from "react-router-dom";
 gsap.registerPlugin(ScrollTrigger);
 const services = [
   {
@@ -103,7 +104,9 @@ function Services() {
           }}
           className="w-full flex md:justify-end justify-center items-center"
         >
-          <Button text="VIEW ALL SERVICES" size={2} className={" text-sm"} />
+          <Link to={"/services"}>
+            <Button text="VIEW ALL SERVICES" size={2} className={" text-sm"} />
+          </Link>
         </motion.div>
         <div
           id="servicesContainer"

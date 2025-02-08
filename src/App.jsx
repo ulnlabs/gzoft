@@ -9,6 +9,7 @@ import Project from "./pages/Project";
 import Review from "./pages/Review";
 import ProjectInfo from "./components/projects/ProjectInfo";
 import Footer from "./components/common/Footer";
+import Service from "./pages/Service";
 function App() {
   return (
     <div className="">
@@ -28,6 +29,7 @@ function App() {
               <Route path="/contact" element={<Contact />} />
               <Route path="/work" element={<Project />} />
               <Route path="/reviews" element={<Review />} />
+              <Route path="/services" element={<Service />} />
               <Route
                 path="/project/:projectName-info"
                 element={<ProjectInfo />}
