@@ -37,11 +37,6 @@ function Project() {
           </div>
         </div>
         <Projects data={data} />
-        <Footer/>
-       
-
-        
-      
     </div>
   );
 }
