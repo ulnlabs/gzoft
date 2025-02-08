@@ -1,6 +1,7 @@
 import React from 'react'
 import Projects from '../components/common/Projects'
 import Footer from "../components/common/Footer"
+import Carsoal from "../components/common/Carosal"
 function Project() {
   const data=[
     {
@@ -26,10 +27,12 @@ function Project() {
         </div>
         <Projects data={data} />
         <Footer/>
+       
+
         
       
     </div>
-  )
+  );
 }
 
-export default Project
+export default Project;

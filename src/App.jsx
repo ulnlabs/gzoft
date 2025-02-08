@@ -4,7 +4,6 @@ import Home from "/src/pages/Home";
 import About from "/src/pages/About";
 import Contact from "./pages/Contact";
 import Navbar from "./components/common/Navbar";
-import Test from "./pages/Test"
 import LenisScroll from "./components/common/LenisScroll";
 import Project from "./pages/Project";
 import Review from "./pages/Review";
@@ -19,7 +18,7 @@ function App() {
         </div>
       </div>
       <div className="relative z-0 w-full overflow-x-hidden">
-      
+        <LenisScroll>
           <BrowserRouter>
             <Navbar />
             <Routes>
@@ -33,8 +32,7 @@ function App() {
 
             </Routes>
           </BrowserRouter>
-          
-        
+        </LenisScroll>
       </div>
     </div>
   );

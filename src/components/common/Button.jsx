@@ -17,7 +17,7 @@ function Button({ text = "GET IN TOUCH", className, size = 1 }) {
     <button
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      className={`flex items-center justify-center text-dark group cursor-pointer ${size === 1 ? "h-[40px]" : "h-[50px]"} ${className}`}
+      className={`flex items-center justify-center text-dark group cursor-pointer max-sm:h-[40px] ${size === 1 ? "h-[40px]" : "h-[50px]"} ${className}`}
     >
       <p
         className={`bg-primary px-6 h-full rounded-l-full flex items-center ${className}`}

@@ -1,6 +1,7 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import React, { useRef } from "react";
+import React, { useContext, useRef } from "react";
+import { GlobalContext } from "../../context/GlobalContext";
 
 function HeroVi() {
   const inifiniteBanner = useRef(null);
@@ -17,8 +18,13 @@ function HeroVi() {
       delay: 20,
     });
   });
+  const { setPointer, pointer } = useContext(GlobalContext);
   return (
-    <div className="relative w-full bg-gradient-to-t md:h-[70vh] lg:h-[700px] h-[400px] from-primary to-transparent flex items-center justify-center overflow-hidden">
+    <div
+      onMouseEnter={() => setPointer("video")}
+      onMouseLeave={() => setPointer("")}
+      className={`relative w-full bg-gradient-to-t md:h-[70vh] lg:h-[700px] h-[400px] from-primary to-transparent flex items-center justify-center overflow-x-hidden cursor-pointer-none`}
+    >
       <div ref={inifiniteBanner} className="flex gap-4 text-6xl">
         <p className=" text-nowrap text-white">Best Tech Partner</p>
         <p className=" text-nowrap text-white">Best Tech Partner</p>

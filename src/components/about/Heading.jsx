@@ -2,7 +2,7 @@ import React from 'react'
 
 const Heading = () => {
   return (
-      <div className='flex items-center gap-5'>
+      <div className='flex items-center pt-[5rem] gap-5'>
         <Title text = "WHO WE ARE" />
         <h2 className='text-white text-5xl font-satoshi font-bold ' >About Our Company</h2>
     </div>
