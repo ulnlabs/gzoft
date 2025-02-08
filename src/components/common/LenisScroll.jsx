@@ -4,8 +4,11 @@ function LenisScroll({ children }) {
   return (
     <ReactLenis
       options={{
-        duration: 1.5,
-        smoothWheel: true,
+        duration: 2,
+        wrapper: {
+          overflow: "hidden",
+          position: "relative",
+        },
       }}
       root
     >
