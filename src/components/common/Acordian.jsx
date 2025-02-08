@@ -36,7 +36,7 @@ const Accordion = ({data}) => {
             transition={{ duration: 0.3 }}
             className="overflow-hidden cursor-pointer font-satoshi text-gray-300 px-4 max-md:text-xs"
           >
-            <p className="w-full  px-10">{item.answer}</p>
+            <p className="w-full font-normal font-satoshi max-md:text-sm px-10">{item.answer}</p>
           </motion.div>
         </div>
       ))}
