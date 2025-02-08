@@ -28,7 +28,7 @@ function About() {
               { question: "01. Our History", answer: "Key factors include keyword optimization, high-quality content, backlinks, mobile-friendliness, page speed, and user experience." },
               { question: "02. Our Mission", answer: "You can do SEO yourself with proper learning, but hiring an agency can save time and provide expertise to improve results faster." },
               { question: "03. Our Vision", answer: "SEO requires ongoing maintenance to adapt to search engine updates, competition, and changing user behaviors." }
-            ]} />                                                                                                     
+            ]} />
           </div>
 
         </div>
@@ -40,7 +40,7 @@ function About() {
       <div className="xl:pt-36 pt-28 md: w-full  ">
         <Heading heading="Meet The Founder" title="ABOUT FOUNDER" />
         <p className="pt-20 text-2xl text-white/80 font-satoshi ">
-          James Andrews, the heart of Celestial Solutions. With a decade of digital marketing expertise, James's passion for innovation and dedication to clients have guided our journey. His strategic vision, client-centered approach, and knack for creative solutions shape our commitment to excellence.
+          <span> James Andrews</span>, the heart of Celestial Solutions. With a decade of digital marketing expertise, James's passion for innovation and dedication to clients have guided our journey. His strategic vision, client-centered approach, and knack for creative solutions shape our commitment to excellence.
         </p>
 
         <div className=" flex xl:flew-row gap-14 xl:w-[80%] items-center justify-center flex-col md:flex-row w-full xl:mx-auto  ">
