@@ -2,21 +2,8 @@ import { AiOutlineDoubleRight } from "react-icons/ai";
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-function Projects() {
+function Projects({data}) {
   const navigate = useNavigate();
-  const [data] = useState([
-    {
-      Image: "https://framerusercontent.com/images/UDxttKeT0c9Ju6za1EBtNrrx9jU.jpg",
-      Title: "content-writing-for-video-grapher",
-      Description: "Stellar Shots Videography is a boutique videography studio specializing in capturing memorable moments through cinematic storytelling."
-    },
-    {
-      Image: "https://framerusercontent.com/images/VPcvml1LaZgRyGeHDUUSSplRKw.jpg?lossless=1",
-      Title: "video-editing-services",
-      Description: "Expert video editing services to transform raw footage into stunning cinematic stories."
-    },
-  ]);
-
   return (
     <div>
       <div className="h-fit flex flex-col gap-y-4 py-5">
