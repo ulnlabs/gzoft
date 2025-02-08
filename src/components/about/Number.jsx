@@ -35,7 +35,7 @@ const Number = ({ number, line }) => {
       className="flex flex-col gap-5 justify-center items-center"
     >
       <div>
-        <h1 className="text-5xl md:text-7xl  text-primary relative">
+        <h1 className="text-2xl md:text-7xl  text-primary relative">
           {number}
           <span
             ref={numberref}
