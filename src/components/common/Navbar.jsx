@@ -20,8 +20,8 @@ const navLinks = [
   },
   {
     id: 4,
-    name: "PROJECT",
-    path: "/project",
+    name: "WORK",
+    path: "/work",
   },
   {
     id: 5,
@@ -175,7 +175,8 @@ function Navbar() {
                 </a>
               );
             })}
-            <button
+            <a
+              href="/contact"
               id="getInTouch"
               className="flex cursor-pointer group items-center justify-center bg-primary p-2 text-dark rounded-full text-xs"
             >
@@ -183,7 +184,7 @@ function Navbar() {
               <span>
                 <TiArrowUp className="text-[25px] rotate-45 group-hover:rotate-90 ease-linear transition-all duration-200 rounded-full" />
               </span>
-            </button>
+            </a>
           </div>
         </div>
       </div>
