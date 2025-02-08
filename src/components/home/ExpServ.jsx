@@ -53,22 +53,18 @@ function ExpServ() {
   useGSAP(() => {
     gsap.from("#ball1", {
       y: 80,
-      duration: 1,
       scrollTrigger: {
         trigger: "#ball1",
         start: "top 80%",
         end: "400% top",
-        scrub: true,
       },
     });
     gsap.from("#ball3", {
       y: 80,
-      duration: 1,
       scrollTrigger: {
         trigger: "#ball2",
         start: "top 80%",
         end: "400% top",
-        scrub: true,
       },
     });
   });
