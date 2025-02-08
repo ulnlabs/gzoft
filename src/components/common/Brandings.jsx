@@ -12,7 +12,7 @@ function Brandings({ banner2 = false }) {
     const bannerWidth = banner1.current.clientWidth;
     tl.to(banner.current, {
       x: -bannerWidth,
-      duration: 10,
+      duration: 16,
       ease: "none",
     });
     tl.to(banner.current, {
@@ -22,7 +22,7 @@ function Brandings({ banner2 = false }) {
     if (banner2) {
       tl2.to(banner02.current, {
         x: bannerWidth,
-        duration: 10,
+        duration: 16,
         ease: "none",
       });
       tl2.to(banner02.current, {
