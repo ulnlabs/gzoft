@@ -18,7 +18,7 @@ function ServiceCard(props) {
       {/* Learn More Button */}
       <a
         href={props.link}
-        className="flex items-center gap-2 text-orange-400 mt-4 font-semibold hover:underline"
+        className="flex items-center gap-2 text-orange-400 mt-4 font-semibold hover:underline text-primary"
       >
         LEARN MORE <ArrowUpRight size={18} />
       </a>
