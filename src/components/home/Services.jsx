@@ -11,16 +11,16 @@ import gsap from "gsap";
 gsap.registerPlugin(ScrollTrigger);
 const services = [
   {
-    title: "Training Wing",
+    title: "Training Programs",
     description:
-      "We provide industry-focused training programs designed to equip individuals with the latest technical skills and hands-on experience.",
+      "We offer hands-on tech bootcamps, corporate training, certification courses, and interactive workshops to equip individuals and businesses with cutting-edge skills.",
     icon: <GraduationCap className="text-primary" />,
     link: "#",
   },
   {
-    title: "IT Consultation",
+    title: "IT Solutions",
     description:
-      "Our expert consultants help businesses streamline their IT infrastructure, optimize workflows, and implement innovative solutions.",
+      "We deliver tailored software solutions, seamless cloud migration, robust cybersecurity, and 24/7 IT support to keep your business secure and efficient.",
     icon: <Briefcase className="text-primary" />,
     link: "#",
   },
@@ -53,7 +53,7 @@ function Services() {
           }}
           className="flex flex-col border-b border-white/8 pb-4"
         >
-          <p className=" font-bold uppercase">#1 It Consultent</p>
+          <p className=" font-bold uppercase">#1 It Training & Services</p>
           <p className=" uppercase">BASED IN INDIA</p>
         </motion.div>
         <div className=" flex justify-between items-center w-fit py-4">
