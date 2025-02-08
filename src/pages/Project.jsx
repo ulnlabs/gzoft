@@ -5,15 +5,26 @@ import Carsoal from "../components/common/Carosal"
 function Project() {
   const data=[
     {
-      Image: "https://framerusercontent.com/images/UDxttKeT0c9Ju6za1EBtNrrx9jU.jpg",
+      Image: [
+        "/carosalimages/about.jpg",
+        "/carosalimages/exp-service.avif",
+        "/carosalimages/person2.jpg",
+      ],
       Title: "content-writing-for-video-grapher",
       Description: "Stellar Shots Videography is a boutique videography studio specializing in capturing memorable moments through cinematic storytelling."
     },
     {
-      Image: "https://framerusercontent.com/images/VPcvml1LaZgRyGeHDUUSSplRKw.jpg?lossless=1",
-      Title: "video-editing-services",
-      Description: "Expert video editing services to transform raw footage into stunning cinematic stories."
-    }
+      Image: [
+        "/carosalimages/p1.jpg",
+        "/carosalimages/p2.jpg",
+        "/carosalimages/p3.jpg",
+      ],
+      Title: "content-writing-for-video-grapher",
+      Description: "Stellar Shots Videography is a boutique videography studio specializing in capturing memorable moments through cinematic storytelling."
+    },
+    
+
+   
   ]
   return (
     <div className='min-h-screen p-8 container mx-auto'>

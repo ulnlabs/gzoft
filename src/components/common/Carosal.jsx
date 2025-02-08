@@ -2,13 +2,11 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 
-const images = [
-  "/carosalimages/about.jpg",
-  "/carosalimages/exp-service.avif",
-  "/carosalimages/person2.jpg",
-];
 
-const Carousel = ({ image }) => {
+
+const Carousel = ({ images}) => {
+  
+  
   const [activeIndex, setActiveIndex] = useState(0);
 
   useEffect(() => {
@@ -24,8 +22,9 @@ const Carousel = ({ image }) => {
   };
 
   return (
-    <div className="relative w-full mt-10 max-w-4xl mx-auto overflow-hidden rounded-lg shadow-lg">
-      <div className="relative md:h-[500px] h-[300px]">
+    <div className="relative object-cover w-full  max-w-4xl mx-auto  overflow-hidden rounded-lg shadow-lg">
+
+      <div className="relative md:h-[400px] h-[400px]">
         <AnimatePresence initial={false}>
           <motion.div
             key={activeIndex}
@@ -39,12 +38,12 @@ const Carousel = ({ image }) => {
         </AnimatePresence>
       </div>
 
-      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+      <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex space-x-2">
         {images.map((_, index) => (
           <button
             key={index}
             onClick={() => handleDotClick(index)}
-            className={`w-5 h-1 rounded-2xl  transition-colors ${
+            className={`w-5 h-1  rounded-2xl  transition-colors ${
               index === activeIndex ? "bg-primary" : "bg-gray-400"
             }`}
           />
