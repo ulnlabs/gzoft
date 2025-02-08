@@ -77,7 +77,7 @@ function Team() {
         <div className="pt-20 w-full relative z-2 ">
           <img
             id="teamimg"
-            src="/team.avif"
+            src="/images/team.avif"
             className="h-[420px] mx-auto drop-shadow-[1px_2px_60px_#000000] saturate-0"
             alt=""
           />
