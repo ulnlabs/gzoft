@@ -5,10 +5,6 @@ function LenisScroll({ children }) {
     <ReactLenis
       options={{
         duration: 2,
-        wrapper: {
-          overflow: "hidden",
-          position: "relative",
-        },
       }}
       root
     >
