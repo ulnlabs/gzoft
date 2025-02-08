@@ -1,42 +1,24 @@
 import React from "react";
 import Tag from "../common/Tag";
 import gsap from "gsap";
-import { ScrollTrigger } from "gsap/all";
-import { useGSAP } from "@gsap/react";
-gsap.registerPlugin(ScrollTrigger);
+import { motion } from "framer-motion";
 function Specialist() {
-  useGSAP(() => {
-    gsap.from("#specialistheader", {
-      y: 80,
-      duration: 1,
-      scrollTrigger: {
-        trigger: "#specialist",
-        start: "20% 80%",
-        end: "25% top",
-      },
-    });
-    gsap.from("#specialistcontainer", {
-      y: 80,
-      duration: 1,
-      scrollTrigger: {
-        trigger: "#specialist",
-        start: "15% 80%",
-        end: "20% top",
-      },
-    });
-    gsap.from("#specialiststats", {
-      y: 80,
-      opacity: 0,
-      duration: 1,
-      scrollTrigger: {
-        trigger: "#specialist",
-        start: "40% 80%",
-        end: "45% top",
-      },
-    });
-  });
   return (
-    <div
+    <motion.div
+      initial={{
+        y: 100,
+        opacity: 0,
+        scale: 0.95,
+      }}
+      whileInView={{
+        y: 0,
+        opacity: 1,
+        scale: 1,
+        transition: { duration: 0.5, delay: 0.2 },
+      }}
+      viewport={{
+        once: true,
+      }}
       id="specialist"
       className="container mx-auto flex flex-col items-center justify-center gap-y-4 py-[4rem] max-lg:px-4"
     >
@@ -82,7 +64,7 @@ function Specialist() {
           </p>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

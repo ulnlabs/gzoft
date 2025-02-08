@@ -80,8 +80,6 @@ function Contact() {
           </section>
         </section>
       </section>
-      <Footer />
-
     </div>
   );
 }

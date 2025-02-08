@@ -9,8 +9,7 @@ import {
   Headphones,
   Briefcase,
 } from "lucide-react";
-import Footer from "../components/common/Footer";
-
+import { motion } from "framer-motion";
 function Service() {
   const services = [
     {
@@ -68,13 +67,26 @@ function Service() {
 
   return (
     <div className="service-page container mx-auto">
-      <header className="service-header">
+      <motion.header
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        className="service-header"
+      >
         <h1 className="text-4xl font-bold text-white text-center pt-30 pb-30">
           Discover <br /> Our Services
         </h1>
-      </header>
+      </motion.header>
 
-      <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-8 p-4">
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        viewport={{
+          once: true,
+        }}
+        className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-8 p-4"
+      >
         {services.map((service, index) => (
           <ServiceCard
             key={index}
@@ -83,9 +95,17 @@ function Service() {
             icon={service.icon}
           />
         ))}
-      </div>
+      </motion.div>
 
-      <section className="why-choose-us mt-16 text-center">
+      <motion.section
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        viewport={{
+          once: true,
+        }}
+        className="why-choose-us mt-16 text-center"
+      >
         <div className="inline-block bg-primary text-black font-semibold px-4 py-1 rounded-full text-sm">
           WHY CHOOSE US
         </div>
@@ -112,7 +132,7 @@ function Service() {
             </div>
           ))}
         </div>
-      </section>
+      </motion.section>
     </div>
   );
 }
