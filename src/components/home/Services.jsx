@@ -35,7 +35,6 @@ function Services() {
       ease:"power2.inOut",
       scrollTrigger: {
         trigger: "#servicesContainer",
-        scrub: true,
       },
     });
   });
