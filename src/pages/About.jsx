@@ -84,7 +84,7 @@ function About() {
         <div className="flex flex-wrap w-[80%]  gap-20 mx-auto justify-center lg:justify-between">
           {
             teamMembers.map(({ title, name, position, image, links }, index) => (
-              <Team key={index} title={title} name={name} position={position} links={links} image={image} />
+              <Team key={index} title={title} name={name} position={position} links={links} image={image} cardname={"name"} />
             ))
           }
 
@@ -93,7 +93,6 @@ function About() {
       <div className="pt-48 gap-48 flex flex-col items-center">
         <InnerHeading title={"FREQUENTLY ASKED QUESTIONS"} heading={"Got Questions? We've Got Answers!"} />
         <FaqSingle/>
-        
       </div>
     
     </div>
@@ -105,21 +104,21 @@ export default About;
 const teamMembers = [
   {
     title: "Tech Associate",
-    name: "John Doe",
+    name: "John Doe4",
     position: "Software Developer",
     image: "images/team.avif",
     links: ["https://github.com", "#", "#", "#"]
   },
   {
     title: "Tech Associate",
-    name: "John Doe",
+    name: "John Doe3",
     position: "Software Developer",
     image: "images/team.avif",
     links: ["https://github.com", "#", "#", "#"]
   },
   {
     title: "Tech Associate",
-    name: "John Doe",
+    name: "John Doe2",
     position: "Software Developer",
     image: "images/team.avif",
     links: ["https://github.com", "#", "#", "#"]

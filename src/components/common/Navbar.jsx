@@ -178,6 +178,7 @@ function Navbar() {
               );
             })}
             <Link 
+            id="getInTouch"
               to="/contact"
               className="flex cursor-pointer group items-center justify-center bg-primary p-2 text-dark rounded-full text-xs"
             >
