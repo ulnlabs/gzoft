@@ -11,7 +11,7 @@ import gsap from "gsap";
 gsap.registerPlugin(ScrollTrigger);
 const services = [
   {
-    title: "Training Programs",
+    title: "Training Wing",
     description:
       "We offer hands-on tech bootcamps, corporate training, certification courses, and interactive workshops to equip individuals and businesses with cutting-edge skills.",
     icon: <GraduationCap className="text-primary" />,
