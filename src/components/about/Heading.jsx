@@ -1,7 +1,7 @@
 import { div } from 'framer-motion/client'
 import React from 'react'
 
-const Heading = ({title, heading }) => {
+const Heading = ({ title, heading }) => {
   return (
     <div className='flex items-center pt-[5rem] gap-5'>
       <Title text={title} />
@@ -17,7 +17,7 @@ export const Title = ({ text }) => (
 export const InnerHeading = ({ title, heading }) => (
   <div className='grid gap-5 place-items-center text-center w-[70%] mx-auto'>
     <Title text={title} />
-    <h2 className='text-white text-5xl ' >{heading}</h2>
+    <h2 className='text-white text-4xl ' >{heading}</h2>
   </div>
 )
 
