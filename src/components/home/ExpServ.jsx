@@ -59,7 +59,6 @@ function ExpServ() {
         start:"top 80%",
         end:"bottom 30%",
         scrub:1,
-        markers:true
       }
     })
     gsap.to("#ball3",{
@@ -69,7 +68,6 @@ function ExpServ() {
         start:"top 80%",
         end:"bottom 30%",
         scrub:1,
-        markers:true
       }
     })
   })

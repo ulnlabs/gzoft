@@ -8,6 +8,7 @@ import LenisScroll from "./components/common/LenisScroll";
 import Project from "./pages/Project";
 import Review from "./pages/Review";
 import ProjectInfo from "./components/projects/ProjectInfo";
+import Footer from "./components/common/Footer";
 function App() {
   return (
     <div className="">
