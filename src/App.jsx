@@ -7,6 +7,7 @@ import Navbar from "./components/common/Navbar";
 import LenisScroll from "./components/common/LenisScroll";
 import Project from "./pages/Project";
 import Service from "./pages/Service";
+import Footer from "./components/common/Footer";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
               <Route path="/services" Component={Service} />
             </Routes>
           </BrowserRouter>
+          <Footer />
         </LenisScroll>
       </div>
     </div>

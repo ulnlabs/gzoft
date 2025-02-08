@@ -1,10 +1,13 @@
 import React from "react";
 
-function Stats({ num, sub , className }) {
+function Stats({ num, sub, className, id }) {
   return (
-    <div className={`w-[180px] h-[180px] rounded-full bg-white/10 flex items-center justify-center flex-col ${className}`}>
+    <div
+      id={id}
+      className={`w-[180px] h-[180px] rounded-full bg-white/10 flex items-center justify-center flex-col ${className}`}
+    >
       <h1 className="text-4xl text-white">{num}</h1>
-      <p className="text-white text-xs font-light">{sub}</p> 
+      <p className="text-white text-xs font-light">{sub}</p>
     </div>
   );
 }

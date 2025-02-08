@@ -2,6 +2,9 @@ import React from "react";
 import Stats from "../common/Stats";
 import { icons, Rocket, Share2, Target } from "lucide-react";
 import { FaReact } from "react-icons/fa6";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/all";
+import { useGSAP } from "@gsap/react";
 const whyChooseUs = [
   {
     title: "Proven Track Record",
@@ -44,16 +47,44 @@ const tinyTitle = [
     icons: <FaReact className="text-primary" />,
   },
 ];
+
+gsap.registerPlugin(ScrollTrigger);
 function ExpServ() {
+  useGSAP(() => {
+    gsap.from("#ball1", {
+      y: 80,
+      duration: 1,
+      scrollTrigger: {
+        trigger: "#ball1",
+        start: "top 80%",
+        end: "400% top",
+        scrub: true,
+      },
+    });
+    gsap.from("#ball3", {
+      y: 80,
+      duration: 1,
+      scrollTrigger: {
+        trigger: "#ball2",
+        start: "top 80%",
+        end: "400% top",
+        scrub: true,
+      },
+    });
+  });
   return (
-    <div className="full relative bg-[url(/images/exp-service.avif)] bg-cover bg-center bg-no-repeat min-h-screen flex flex-col justify-between items-center">
+    <div className="full relative bg-[url(/images/exp-service.avif)] bg-cover bg-center bg-no-repeat min-h-screen flex flex-col justify-between items-center pb-[4rem]">
       <div className="absolute h-full w-full bg-radial from-primary/50 to-black/50"></div>
       <div className="flex mx-auto w-fit mt-6 container max-lg:px-4 items-center justify-center">
         <div className="flex items-center justify-center max-lg:flex-col">
-          <Stats num={"15+"} 
-          className={"relative left-2"}
-          sub={"Years of Experience"} />
           <Stats
+            id={"ball1"}
+            num={"15+"}
+            className={"relative left-2"}
+            sub={"Years of Experience"}
+          />
+          <Stats
+            id={"ball2"}
             className={"relative -left-2"}
             num={"200+"}
             sub={"Successful Projects"}
@@ -61,11 +92,13 @@ function ExpServ() {
         </div>
         <div className="flex items-center justify-center max-lg:flex-col">
           <Stats
+            id={"ball3"}
             className={"relative "}
             num={"150+"}
             sub={"Happy Client"}
           />
           <Stats
+            id={"ball4"}
             className={"relative -left-4"}
             num={"160+"}
             sub={"5 Star Reviews"}
