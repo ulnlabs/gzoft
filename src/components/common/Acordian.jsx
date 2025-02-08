@@ -34,7 +34,7 @@ const Accordion = ({data}) => {
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: openIndex === index ? "auto" : 0, opacity: openIndex === index ? 1 : 0 }}
             transition={{ duration: 0.3 }}
-            className="overflow-hidden cursor-pointer text-gray-300 px-4 max-md:text-xs"
+            className="overflow-hidden cursor-pointer font-satoshi text-gray-300 px-4 max-md:text-xs"
           >
             <p className="w-full  px-10">{item.answer}</p>
           </motion.div>
