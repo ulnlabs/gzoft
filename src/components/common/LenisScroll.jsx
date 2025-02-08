@@ -5,7 +5,9 @@ function LenisScroll({ children }) {
     <ReactLenis
       options={{
         duration: 1.5,
-      }} root
+        smoothWheel: true,
+      }}
+      root
     >
       {children}
     </ReactLenis>
