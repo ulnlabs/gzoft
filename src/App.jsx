@@ -17,7 +17,7 @@ function App() {
         </div>
       </div>
       <div className="relative z-0 w-full overflow-x-hidden">
-      
+        <LenisScroll>
           <BrowserRouter>
             <Navbar />
             <Routes>
@@ -26,11 +26,10 @@ function App() {
               <Route path="/test" element={<Test />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/project" element={<Project />} />
-
             </Routes>
           </BrowserRouter>
-          
-        
+        </LenisScroll>
+
       </div>
     </div>
   );

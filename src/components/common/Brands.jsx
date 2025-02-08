@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 
-const Brands = () => {
+const  Brands = () => {
   const containerRef = useRef(null);
 
   const [brands] = useState([
