@@ -32,7 +32,7 @@ function Services() {
     tl.from("#servicesContainer", {
       y: 90,
       duration: 1,
-      ease:"power2.inOut",
+      ease: "power2.inOut",
       scrollTrigger: {
         trigger: "#servicesContainer",
       },
@@ -81,6 +81,9 @@ function Services() {
             y: 0,
             transition: { duration: 0.5, delay: 0.2 },
           }}
+          viewport={{
+            once: true,
+          }}
           className="flex gap-8 pt-[4em] pb-4 max-md:flex-col max-md:justify-center max-md:items-center"
         >
           <Tags text="Services" />
@@ -94,6 +97,9 @@ function Services() {
             opacity: 1,
             y: 0,
             transition: { duration: 0.5, delay: 0.2 },
+          }}
+          viewport={{
+            once: true,
           }}
           className="w-full flex md:justify-end justify-center items-center"
         >
