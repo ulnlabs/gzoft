@@ -7,6 +7,7 @@ import Navbar from "./components/common/Navbar";
 import Test from "./pages/Test"
 import LenisScroll from "./components/common/LenisScroll";
 import Project from "./pages/Project";
+import Review from "./pages/Review";
 function App() {
   return (
     <div className="">
@@ -25,6 +26,8 @@ function App() {
               <Route path="/about" element={<About />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/project" element={<Project />} />
+              <Route path="/reviews" element={<Review />} />
+
 
             </Routes>
           </BrowserRouter>
