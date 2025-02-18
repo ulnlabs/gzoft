@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "../common/Button";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 function Hero() {
   return (
     <motion.div
@@ -37,8 +38,10 @@ function Hero() {
             We believe in combining innovative design, sustainable practices,
             and exceptional craftsmanship to bring your vision to life.
           </p>
-          <Button className={"max-md:hidden"} size={2} text="Get Started" />
-          <Button className={"md:hidden"} size={1} text="Get Started" />
+          <Link to="/contact">
+            <Button className={"max-md:hidden"} size={2} text="Get Started" />
+            <Button className={"md:hidden"} size={1} text="Get Started" />
+          </Link>
         </div>
       </div>
     </motion.div>

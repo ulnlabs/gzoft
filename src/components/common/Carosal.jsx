@@ -23,7 +23,6 @@ const Carousel = ({ images}) => {
 
   return (
     <div className="relative object-cover w-full  max-w-4xl mx-auto  overflow-hidden rounded-lg shadow-lg">
-
       <div className="relative md:h-[400px] h-[400px]">
         <AnimatePresence initial={false}>
           <motion.div
@@ -37,7 +36,6 @@ const Carousel = ({ images}) => {
           />
         </AnimatePresence>
       </div>
-
       <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex space-x-2">
         {images.map((_, index) => (
           <button

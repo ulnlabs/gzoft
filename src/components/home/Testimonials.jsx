@@ -1,38 +1,30 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import Review from "../common/Review";
-import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import Button from "../common/Button";
 import { ScrollTrigger } from "gsap/all";
-import { motion } from "framer-motion";
 gsap.registerPlugin(ScrollTrigger);
 function Testimonials() {
   const testiref = useRef(null);
   const testirefheight = useRef(null);
-  useGSAP(() => {
+  useEffect(() => {
     const tl = gsap.timeline({
       repeat: -1,
     });
     const height = testirefheight.current.clientHeight;
     tl.to(testiref.current, {
-      duration: 10,
+      duration: 20,
       y: -height,
       ease: "none",
     });
     tl.to(testiref.current, {
       y: 0,
       duration: 0,
+      ease: "power3",
     });
   });
   return (
-    <motion.div
-      initial={{ y: 100 }}
-      whileInView={{ y: 0 }}
-      transition={{ duration: 0.5, delay: 0.2 }}
-      viewport={{
-        once: true,
-      }}
-    >
+    <div>
       <div className="max-h-screen w-full overflow-hidden relative flex flex-col items-center justify-start ">
         <div className="max-sm:px-4 container min-h-full mx-auto  flex flex-col items-center justify-start gap-y-4 py-[4rem]">
           <div className="absolute w-6xl top-0 mx-auto h-12 rounded-b-full blur-3xl bg-primary"></div>
@@ -85,7 +77,7 @@ function Testimonials() {
           </a>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 }
 

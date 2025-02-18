@@ -50,11 +50,6 @@ function Project() {
           </div>
         </motion.div>
         <Projects data={data} />
-       
-       
-
-        
-      
     </div>
   );
 }
