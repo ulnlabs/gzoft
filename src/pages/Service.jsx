@@ -19,7 +19,7 @@ function Service() {
       icon: <GraduationCap className="text-primary" />,
     },
     {
-      title: "IT Consultation",
+      title: "IT Solutions",
       description:
         "Our expert consultants help businesses streamline their IT infrastructure, optimize workflows, and implement innovative solutions.",
       icon: <Briefcase className="text-primary" />,
@@ -28,41 +28,41 @@ function Service() {
 
   const whyChooseUs = [
     {
-      title: "Proven Track Record",
+      title: "Proven Expertise",
       description:
-        "We have built a reputation as a trusted and reliable partner in achieving business success.",
+        "Industry-leading IT training and innovative solutions for business growth and success.",
       icon: <Rocket className="text-primary" />,
     },
     {
-      title: "Tailored Solutions",
+      title: "Customized Learning",
       description:
-        "We offer personalized solutions tailored to your specific goals, audience, and industry.",
+        "Hands-on programs with practical skills and real-world experience to help professionals excel.",
       icon: <Share2 className="text-primary" />,
     },
     {
-      title: "Client-Centric Focus",
+      title: "Client-Focused Approach",
       description:
-        "Your success is our priority. We prioritize understanding your business goals.",
+        "Providing industry-relevant training and IT solutions to boost efficiency and innovation.",
       icon: <Target className="text-primary" />,
     },
     {
-      title: "Transparent Communication",
+      title: "Results-Driven Approach",
       description:
-        "We believe in open and honest communication every step of the way.",
+        "Our IT training and services are designed to deliver real-world skills and measurable success.",
       icon: <MessageCircle className="text-primary" />,
     },
     {
-      title: "Dedicated Support",
+      title: "Innovative Solutions",
       description:
-        "Your success is our priority, and we're here to support you every step of the way.",
+        "We stay ahead of the curve, leveraging the latest technologies to deliver cutting-edge solutions.",
       icon: <Headphones className="text-primary" />,
     },
     {
-      title: "Expertise Across Industries",
+      title: "Commitment to Excellence",
       description:
-        "Our team has extensive experience working across various industries.",
+        "We prioritize quality, ensuring you receive the best training, support, and resources for long-term growth.",
       icon: <Briefcase className="text-primary" />,
-    },
+    }
   ];
 
   return (

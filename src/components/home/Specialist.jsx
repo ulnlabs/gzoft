@@ -33,10 +33,10 @@ function Specialist() {
         className="w-full flex items-center lg:justify-end justify-center"
       >
         <p className="text-white/50 font-satoshi lg:w-1/2 w-full">
-          Our top-notch digital marketing agency not only delivers impressive
-          results but also dazzles our clients with remarkable statistics. We
-          pride ourselves on our ability to amaze customers with tangible
-          outcomes and eye-catching figures.
+          Our industry-leading IT training and services drive business success through
+          expert guidance, tailored programs, and cutting-edge solutions. With a commitment
+          to innovation and excellence, we go beyond expectations to deliver impactful
+          results and unmatched customer satisfaction.
         </p>
       </div>
       <div
@@ -49,9 +49,9 @@ function Specialist() {
             <p className="text-white">Average Traffic Increase</p>
           </div>
           <p className="text-white/50 font-satoshi  py-2 backdrop-blur rounded-2xl px-2">
-            Clients choose to stay with us over the long run due to the
-            exceptional results we deliver and the strong relationships we
-            build.
+          Businesses rely on our IT training and services 
+          for long-term success, driven by exceptional results 
+          and strong client relationships.
           </p>
         </div>
         <div className="lg:w-[40%] h-[400px] rounded-4xl bg-dark p-6 flex flex-col items-start justify-between">

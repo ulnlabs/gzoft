@@ -23,11 +23,11 @@ function Hero() {
         <h1 className=" flex gap-2 text-6xl max-md:text-5xl max-sm:text-2xl">
           The Best{" "}
           <span className="bg-primary rotate-3">
-            <p className="text-black -rotate-3">Digital</p>
+            <p className="text-black -rotate-3">IT  Services </p>
           </span>
         </h1>
         <h1 className="flex gap-2 text-6xl max-md:text-5xl max-sm:text-2xl">
-          <p>Marketing</p>
+          <p>& Training</p>
           <div className="bg-primary rounded-full h-10">
             <img src="/images/hero-mic.avif" className="h-full w-full" alt="" />
           </div>
@@ -35,8 +35,7 @@ function Hero() {
         </h1>
         <div className="flex items-center flex-col gap-4 max-sm:text-sm">
           <p className="max-w-lg text-center font-satoshi text-white/90">
-            We believe in combining innovative design, sustainable practices,
-            and exceptional craftsmanship to bring your vision to life.
+            We believe in bridging technology and users through innovation, expert training, and practical solutions for success in the digital age.
           </p>
           <Link to="/contact">
             <Button className={"max-md:hidden"} size={2} text="Get Started" />

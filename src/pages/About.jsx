@@ -21,8 +21,9 @@ function About() {
       <div className="xl:pt-24 md:pt-14 pt-5" >
         <Heading heading={"About Our Company"} title={"WHO WE ARE"} />
         <div className="flex gap-20 xl:flex-row  flex-col w-full pt-10 items-start ">
-          <p  className=' text-2xl  xl:text-3xl h-full font-satoshi  f w-full leading-10 text-gray-400'>`Let's get acquainted! We're not your average digital marketing agency - we're a team of passionate individuals who eat, sleep, and breathe creativity, innovation, and all things digital. At Celestial Solutions, we're on a mission to make your online <span className="text-primary font-semibold"> dreams come true</span> , one pixel at a time! We're a bunch of tech-savvy wizards, design enthusiasts, and social media mavens who believe that digital marketing should be fun, exciting, and downright awesome.`</p>
-          <div   className=" ">
+          <p className=' text-2xl  xl:text-3xl h-full font-satoshi  f w-full leading-10 text-gray-400'>
+            At <span className="text-primary font-semibold"> G-Zoft </span>, we are dedicated to empowering individuals and businesses with <span className="text-primary font-semibold"> cutting-edge </span>technology solutions and comprehensive training programs. Our mission is to bridge the gap between technology and its users, ensuring that everyone has the tools and knowledge to thrive in the digital age. With a team of <span className="text-primary font-semibold"> tech-savvy </span> experts,<span className="text-primary font-semibold"> innovative  </span>thinkers and <span className="text-primary font-semibold"> passionate</span> educators, we make technology accessible, practical, and truly transformative.</p>
+          <div className=" ">
             <Acordian data={[
               { question: "01. Our History", answer: "Key factors include keyword optimization, high-quality content, backlinks, mobile-friendliness, page speed, and user experience." },
               { question: "02. Our Mission", answer: "You can do SEO yourself with proper learning, but hiring an agency can save time and provide expertise to improve results faster." },
@@ -36,14 +37,14 @@ function About() {
         <InnerHeading title={"Brands"} heading="Brands we have have worked with" />
         <Brandings banner2 />
       </div>
-      <div  className="xl:pt-36 pt-28 md: w-full  ">
+      <div className="xl:pt-36 pt-28 md: w-full  ">
         <Heading heading="Meet The Founder" title="ABOUT FOUNDER" />
         <p className="pt-20 text-2xl text-white/80 font-satoshi ">
-          James Andrews, the heart of Celestial Solutions. With a decade of digital marketing expertise, James's passion for innovation and dedication to clients have guided our journey. His strategic vision, client-centered approach, and knack for creative solutions shape our commitment to excellence.
+          <span> James Andrews</span>, the heart of Celestial Solutions. With a decade of digital marketing expertise, James's passion for innovation and dedication to clients have guided our journey. His strategic vision, client-centered approach, and knack for creative solutions shape our commitment to excellence.
         </p>
 
         <div className=" flex xl:flew-row gap-14 xl:w-[80%] items-center justify-center flex-col md:flex-row w-full xl:mx-auto  ">
-          <div  className=" " >
+          <div className=" " >
             <FounderBanner />
           </div>
           <div className=" md:pt-26 ">
@@ -92,9 +93,10 @@ function About() {
       </div>
       <div className="pt-48 gap-48 flex flex-col items-center">
         <InnerHeading title={"FREQUENTLY ASKED QUESTIONS"} heading={"Got Questions? We've Got Answers!"} />
-        <FaqSingle/>
+        <FaqSingle />
+
       </div>
-    
+
     </div>
   </div>;
 }
