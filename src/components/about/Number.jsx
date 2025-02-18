@@ -13,8 +13,8 @@ const Number = ({ number, line }) => {
       duration: 1,
       scrollTrigger: {
         trigger: stepRef.current,
-        start: "top 80%",
-        end: "bottom 20%",
+        start: "top center",
+        end: "bottom bottom",
         scrub: 1,
       },
     });
@@ -24,7 +24,7 @@ const Number = ({ number, line }) => {
       scrollTrigger: {
         trigger: stepRef.current,
         start: "top center",
-        end: "bottom top",
+        end: "bottom center",
         scrub: 1,
       },
     });

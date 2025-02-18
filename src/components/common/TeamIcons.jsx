@@ -7,56 +7,67 @@ function TeamIcons({ toggle, setToggle, link = ["#", "#", "#"] }) {
   const linkedinIcon = useRef(null);
   const facebookIcon = useRef(null);
   const twitterIcon = useRef(null);
+  const closeBar = useRef(null);
   useEffect(() => {
     if (toggle) {
       gsap.to(menu.current, {
-      x: -80,
-      duration: 1,
-      ease: "power4",
-      rotate: 0,
+        x: -80,
+        duration: 1,
+        ease: "power4",
+        rotate: 0,
       });
       gsap.to(linkedinIcon.current, {
-      x: -25,
-      duration: 1,
-      ease: "power4",
-      rotate: 0,
+        x: -25,
+        duration: 1,
+        ease: "power4",
+        rotate: 0,
       });
       gsap.to(facebookIcon.current, {
-      x: 25,
-      duration: 1,
-      ease: "power4",
-      rotate: 0,
+        x: 25,
+        duration: 1,
+        ease: "power4",
+        rotate: 0,
       });
       gsap.to(twitterIcon.current, {
-      x: 80,
-      duration: 1,
-      ease: "power4",
-      rotate: 0,
+        x: 80,
+        duration: 1,
+        ease: "power4",
+        rotate: 0,
+      });
+      gsap.to(closeBar.current, {
+        rotate: -45,
+        duration: 1,
+        ease: "power4",
       });
     } else {
       gsap.to(menu.current, {
-      x: 0,
-      duration: 1,
-      ease: "power4",
-      rotate: 0,
+        x: 0,
+        duration: 1,
+        ease: "power4",
+        rotate: 0,
       });
       gsap.to(linkedinIcon.current, {
-      x: 0,
-      duration: 1,
-      ease: "power4",
-      rotate: -180,
+        x: 0,
+        duration: 1,
+        ease: "power4",
+        rotate: -180,
       });
       gsap.to(facebookIcon.current, {
-      x: 0,
-      duration: 1,
-      ease: "power4",
-      rotate: -270,
+        x: 0,
+        duration: 1,
+        ease: "power4",
+        rotate: -270,
       });
       gsap.to(twitterIcon.current, {
-      x: 0,
-      duration: 1,
-      ease: "power4",
-      rotate: -360,
+        x: 0,
+        duration: 1,
+        ease: "power4",
+        rotate: -360,
+      });
+      gsap.to(closeBar.current, {
+        rotate: 0,
+        duration: 1,
+        ease: "power4",
       });
     }
   }, [toggle]);
@@ -67,7 +78,10 @@ function TeamIcons({ toggle, setToggle, link = ["#", "#", "#"] }) {
         onClick={() => setToggle(!toggle)}
         className="bg-white h-10 w-10 rounded-xl flex items-center justify-center absolute z-3 cursor-pointer"
       >
-        <div className="realative flex items-center justify-center">
+        <div
+          ref={closeBar}
+          className="realative flex items-center justify-center"
+        >
           <div className="absolute w-7 h-[3px] rounded bg-black"></div>
           <div className="absolute w-7 h-[3px] rounded rotate-90 bg-black"></div>
         </div>

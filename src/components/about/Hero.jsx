@@ -8,7 +8,7 @@ const Hero = () => {
                 alt="About" 
                 className='w-full h-full object-cover'
             />
-            <div className='bg-gradient-to-t absolute bottom-0 p-10 font-extrabold sm:text-xl w-screen text-center text-primary  z-40 from-black to-transparent'>
+            <div className='bg-gradient-to-t absolute bottom-0 p-10 font-extrabold sm:text-xl w-full text-center text-primary  z-9 from-black to-transparent'>
                 Hey There! Welcome to G-ZOFT !
             </div>
         </div>

@@ -22,7 +22,14 @@ function Review({
           {description}
         </p>
         <div className="border-t  flex gap-4 border-white/20 pt-4">
-          <img src={img} className="w-[60px] rounded-2xl " alt="" />
+          <img
+            src={img}
+            width={50}
+            height={50}
+            loading="lazy"
+            className="w-[60px] rounded-2xl "
+            alt=""
+          />
           <div className="flex flex-col text-white gap-1">
             <h1>{name}</h1>
             <p className="uppercase text-xs text-zinc-700">{from}</p>
