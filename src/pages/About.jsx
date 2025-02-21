@@ -82,10 +82,10 @@ function About() {
         <p className="text-center pt-5 pb-20 mx-auto w-[40%] text-xl text-white/80 font-satoshi ">
           Get ready to meet the faces behind the magic, the dreamers, the doers, and the unstoppable force driving our success.
         </p>
-        <div className="flex flex-wrap w-[80%]  gap-20 mx-auto justify-center lg:justify-between">
+        <div className="flex flex-wrap w-[90%] gap-y-20  gap-2 mx-auto ">
           {
-            teamMembers.map(({ title, name, position, image, links }, index) => (
-              <Team key={index} title={title} name={name} position={position} links={links} image={image} cardname={"name"} />
+            teamMembers.map(({ title, title2, name, position, image, links }, index) => (
+              <Team key={index} title={title} title2={title2} name={name} position={position} links={links} image={image} cardname={"name"} />
             ))
           }
 
@@ -105,31 +105,60 @@ export default About;
 
 const teamMembers = [
   {
-    title: "Tech Associate",
-    name: "John Doe4",
-    position: "Software Developer",
-    image: "images/team.avif",
+    title: "Visionary",
+    title2: "Innovation Pioneer",
+    name: "Sylvia Charley",
+    position: "Founder",
+    image: "images/team/team.avif",
     links: ["https://github.com", "#", "#", "#"]
   },
   {
-    title: "Tech Associate",
-    name: "John Doe3",
-    position: "Software Developer",
-    image: "images/team.avif",
+    title: "Enterprise ",
+    title2: "Development Catalyst",
+    name: "Dr S Sumathi",
+    position: "Director",
+    image: "images/team/team.avif",
     links: ["https://github.com", "#", "#", "#"]
   },
   {
-    title: "Tech Associate",
-    name: "John Doe2",
-    position: "Software Developer",
-    image: "images/team.avif",
+    title: "Innovative",
+    title2: "Technology Architect",
+    name: "Balaji Srinivassan",
+    position: "Tech Lead",
+    image: "images/team/team.avif",
     links: ["https://github.com", "#", "#", "#"]
   },
   {
-    title: "Tech Associate",
-    name: "John Doe",
-    position: "Software Developer",
-    image: "images/team.avif",
+    title: "Precision",
+    title2: "Software Alchemist",
+
+    name: "Jahangeer I",
+    position: "Tech Associate",
+    image: "images/team/team.avif",
+    links: ["https://github.com", "#", "#", "#"]
+  },
+  {
+    title: "Strategic",
+    title2: "Process Orchestrator",
+    name: "Charley Benjamin",
+    position: "Operations Head",
+    image: "images/team/team.avif",
+    links: ["https://github.com", "#", "#", "#"]
+  },
+  {
+    title: "Training",
+    title2: "Excellence Advocate",
+    name: "Sushanth singh",
+    position: "Training Head",
+    image: "images/team/team.avif",
+    links: ["https://github.com", "#", "#", "#"]
+  },
+  {
+    title: "Customer",
+    title2: "Experience Orchestrator",
+    name: "Parvathi",
+    position: "Client Relations Manager",
+    image: "images/team/team.avif",
     links: ["https://github.com", "#", "#", "#"]
   },
 ]
