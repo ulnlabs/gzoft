@@ -11,7 +11,7 @@ import Team from "../components/common/Team"
 import Faq from "../components/home/Faq";
 
 function About() {
-  return <div className="pt-[8rem] px-10">
+  return <div className="pt-[8rem] px-5 md:px-10">
     <div >
       <Hero />
     </div>
@@ -82,8 +82,8 @@ function About() {
         <InnerHeading title={"TEAM MEMBERS"} heading={"Say Hello to Our Team "} />
         <p className="text-center pt-5 pb-20 mx-auto w-[40%] text-xl text-white/80 font-satoshi ">
           Meet the visionaries, the doers, and the unstoppable force behind our success.</p>
-        <div className="flex flex-wrap w-[90%] gap-y-20  gap-2 mx-auto ">
-          {
+        <div className="flex flex-wrap w-[95%] gap-y-20 gap-3 justify-center   mx-auto ">
+          { 
             teamMembers.map(({ title, title2, name, position, image, links }, index) => (
               <Team key={index} title={title} title2={title2} name={name} position={position} links={links} image={image} cardname={"name"} />
             ))
@@ -91,7 +91,7 @@ function About() {
 
         </div>
       </div>
-      <div className="pt-48 gap-48 flex flex-col items-center">
+      <div className="pt-48 gap-48 flex flex-col items-center w-full">
         <Faq />
       </div>
     </div>
@@ -106,7 +106,7 @@ const teamMembers = [
     title2: "Innovation Pioneer",
     name: "Sylvia Charley",
     position: "Founder",
-    image: "images/team/team.avif",
+    image: "images/team/Sylvia.png",
     links: ["https://github.com", "#", "#", "#"]
   },
   {
@@ -114,7 +114,7 @@ const teamMembers = [
     title2: "Development Catalyst",
     name: "Dr S Sumathi",
     position: "Director",
-    image: "images/team/team.avif",
+    image: "images/team/Sylvia.png",
     links: ["https://github.com", "#", "#", "#"]
   },
   {
@@ -122,7 +122,7 @@ const teamMembers = [
     title2: "Technology Architect",
     name: "Balaji Srinivassan",
     position: "Tech Lead",
-    image: "images/team/team.avif",
+    image: "images/team/Sylvia.png",
     links: ["https://github.com", "#", "#", "#"]
   },
   {
@@ -131,7 +131,7 @@ const teamMembers = [
 
     name: "Jahangeer I",
     position: "Tech Associate",
-    image: "images/team/team.avif",
+    image: "images/team/Sylvia.png",
     links: ["https://github.com", "#", "#", "#"]
   },
   {
@@ -139,7 +139,7 @@ const teamMembers = [
     title2: "Process Orchestrator",
     name: "Charley Benjamin",
     position: "Operations Head",
-    image: "images/team/team.avif",
+    image: "images/team/Sylvia.png",
     links: ["https://github.com", "#", "#", "#"]
   },
   {
@@ -147,7 +147,7 @@ const teamMembers = [
     title2: "Excellence Advocate",
     name: "Sushanth singh",
     position: "Training Head",
-    image: "images/team/team.avif",
+    image: "images/team/Sushant_Singh.png",
     links: ["https://github.com", "#", "#", "#"]
   },
   {
@@ -155,7 +155,7 @@ const teamMembers = [
     title2: "Experience Orchestrator",
     name: "Parvathi",
     position: "Client Relations Manager",
-    image: "images/team/team.avif",
+    image: "images/team/Sylvia.png",
     links: ["https://github.com", "#", "#", "#"]
   },
 ]

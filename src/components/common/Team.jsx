@@ -71,9 +71,9 @@ function Team({
     <div
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      className="max-w-lg min-w-[420px]"
+      className="max-w-lg  min-w-[420px] px-10"
     >
-      <div className="w-full min-h-[280px] cursor-pointer rounded-4xl overflow-hidden bg-white/5 relative border flex items-start justify-center flex-col">
+      <div className="w-full min-h-[480px] cursor-pointer rounded-4xl overflow-hidden bg-white/5 relative border flex items-start justify-center flex-col">
         <div
           ref={teamtitle}
           className="absolute  w-[102%] top-0 -left-[1%]  pt-10 "
@@ -85,18 +85,18 @@ function Team({
           {title2}
           </p>
         </div>
-        <div className="pt-16 w-full relative z-2 overflow-hidden">
+        <div className="pt-16 w-full  relative z-2 overflow-hidden">
           <img
             ref={teamimg}
             src={image}
-            className="h-[420px] mx-auto drop-shadow-[1px_2px_60px_#000000] saturate-0"
+            className="h-[500px] px-2 mx-auto drop-shadow-[1px_2px_60px_#000000] saturate-0"
             alt=""
           />
         </div>
         <div className="w-full absolute flex justify-center z-0 my-auto -bottom-2/6">
           <div
             ref={teamcircle}
-            className="min-h-[500px] min-w-[500px] bg-primary rounded-full"
+            className="min-h-[550px] min-w-[400px] bg-primary rounded-full"
           ></div>
         </div>
         <div className="absolute bottom-0 w-full h-20 bg-gradient-to-t from-black to-transparent z-2 flex items-center justify-center">
