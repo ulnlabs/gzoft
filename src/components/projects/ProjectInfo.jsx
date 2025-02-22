@@ -1,15 +1,17 @@
 import { AiOutlineDoubleLeft } from "react-icons/ai";
-import React from 'react';
 import { useLocation, useParams, Link } from 'react-router-dom';
 import Label from "/src/components/about/Label";
 import { InnerHeading } from "../about/Heading";
 
+
+
 function ProjectInfo() {
+
   const location = useLocation();
   const project = location.state?.project;
   return (
     <div className=" relative min-h-screen container mx-auto py-[5rem]">
-      <h1 className="text-3xl font-bold">
+      <h1 className="text-3xl text-white font-bold">
         {project.Title}
       </h1>
       <img src={project.Image[0]} alt={project.Title} className="w-full md:h-[70vh] h-[50%] rounded-xl mt-5 object-cover" />
@@ -42,8 +44,8 @@ function ProjectInfo() {
                   <h4 className="text-xl text-white font-satoshi font-semibold">{heading}</h4>
                   <div>
                     <ul className="px-10 ">
-                      {content.map((item) => (
-                        <li className="py-2 text-xl mt-2 mx-4 px-4 font-satoshi list-disc ">{item} </li>
+                      {content.map((item,key) => (
+                        <li key={key} className="py-2 text-xl mt-2 mx-4 px-4 font-satoshi list-disc ">{item} </li>
                       ))}
                     </ul>
                   </div>
