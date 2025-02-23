@@ -1,69 +1,12 @@
 import React from "react";
 import ServiceCard from "../components/common/ServiceCard";
-import {
-  GraduationCap,
-  Rocket,
-  Share2,
-  Target,
-  MessageCircle,
-  Headphones,
-  Briefcase,
-} from "lucide-react";
-import { motion } from "framer-motion";
-function Service() {
-  const services = [
-    {
-      title: "Training Wing",
-      description:
-        "We provide industry-focused training programs designed to equip individuals with the latest technical skills and hands-on experience.",
-      icon: <GraduationCap className="text-primary" />,
-    },
-    {
-      title: "IT Solutions",
-      description:
-        "Our expert consultants help businesses streamline their IT infrastructure, optimize workflows, and implement innovative solutions.",
-      icon: <Briefcase className="text-primary" />,
-    },
-  ];
 
-  const whyChooseUs = [
-    {
-      title: "Proven Expertise",
-      description:
-        "Industry-leading IT training and innovative solutions for business growth and success.",
-      icon: <Rocket className="text-primary" />,
-    },
-    {
-      title: "Customized Learning",
-      description:
-        "Hands-on programs with practical skills and real-world experience to help professionals excel.",
-      icon: <Share2 className="text-primary" />,
-    },
-    {
-      title: "Client-Focused Approach",
-      description:
-        "Providing industry-relevant training and IT solutions to boost efficiency and innovation.",
-      icon: <Target className="text-primary" />,
-    },
-    {
-      title: "Results-Driven Approach",
-      description:
-        "Our IT training and services are designed to deliver real-world skills and measurable success.",
-      icon: <MessageCircle className="text-primary" />,
-    },
-    {
-      title: "Innovative Solutions",
-      description:
-        "We stay ahead of the curve, leveraging the latest technologies to deliver cutting-edge solutions.",
-      icon: <Headphones className="text-primary" />,
-    },
-    {
-      title: "Commitment to Excellence",
-      description:
-        "We prioritize quality, ensuring you receive the best training, support, and resources for long-term growth.",
-      icon: <Briefcase className="text-primary" />,
-    }
-  ];
+import { motion } from "framer-motion";
+import { services } from "../Data/Services";
+function Service() {
+
+
+
 
   return (
     <div className="service-page container mx-auto">

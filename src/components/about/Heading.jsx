@@ -42,7 +42,7 @@ const Heading = ({ title, heading }) => {
   )
 }
 
-export const Title = ({ text , className}) => {
+export const Title = ({ text }) => {
 
   const thisRef = useRef(null)
   useGSAP(() => {
@@ -62,8 +62,7 @@ export const Title = ({ text , className}) => {
       }
     );
   }, [])
-  console.log(className)
-  return <h1 ref={thisRef} className={`${className} text-primary  w-fit rounded-full px-4 text-xs font-satoshi font-bold bg-white/10 p-2`}>{text}</h1>
+  return <h1 ref={thisRef} className={` text-primary  w-fit rounded-full px-4 text-xs font-satoshi font-bold bg-white/10 p-2`}>{text}</h1>
 }
 
 export const InnerHeading = ({ title, heading }) => {

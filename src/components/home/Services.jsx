@@ -3,29 +3,14 @@ import { FaStar } from "react-icons/fa";
 import Tags from "../common/Tag";
 import Button from "../common/Button";
 import ServiceCard from "../common/ServiceCard";
-import { Briefcase, GraduationCap } from "lucide-react";
 import { motion } from "framer-motion";
 import { ScrollTrigger } from "gsap/all";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { Link } from "react-router-dom";
+import { services } from "../../Data/Services";
 gsap.registerPlugin(ScrollTrigger);
-const services = [
-  {
-    title: "Training Wing",
-    description:
-      "We offer hands-on tech bootcamps, corporate training, certification courses, and interactive workshops to equip individuals and businesses with cutting-edge skills.",
-    icon: <GraduationCap className="text-primary" />,
-    link: "#",
-  },
-  {
-    title: "IT Solutions",
-    description:
-      "We deliver tailored software solutions, seamless cloud migration, robust cybersecurity, and 24/7 IT support to keep your business secure and efficient.",
-    icon: <Briefcase className="text-primary" />,
-    link: "#",
-  },
-];
+
 
 function Services() {
   useGSAP(() => {
