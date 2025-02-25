@@ -27,7 +27,7 @@ export const services = [
 ];
 export const whyChooseUs = [
   {
-    title: "Proven Expertise",
+    title: "Proven   Expertise",
     description:
       "Industry-leading IT training and innovative solutions for business growth and success.",
     icon: <Rocket className="text-primary" />,
