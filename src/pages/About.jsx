@@ -28,11 +28,17 @@ function About() {
               mission is to bridge the gap between technology and its users,
               ensuring that everyone has the tools and knowledge to thrive in
               the digital age. With a team of{" "}
-              <span className="text-primary font-semibold"> tech-savvy </span>{" "}
+              <span className="text-primary font-semibold">
+                {" "}
+                tech-savvy{" "}
+              </span>{" "}
               experts,
               <span className="text-primary font-semibold"> innovative </span>
               thinkers and{" "}
-              <span className="text-primary font-semibold"> passionate</span>{" "}
+              <span className="text-primary font-semibold">
+                {" "}
+                passionate
+              </span>{" "}
               educators, we make technology accessible, practical, and truly
               transformative.
             </p>
@@ -69,11 +75,10 @@ function About() {
         <div className="xl:pt-36 pt-28 md: w-full  ">
           <Heading heading="Meet The Founder" title="ABOUT FOUNDER" />
           <p className="pt-20 text-2xl text-white/80 font-satoshi ">
-            <span> James Andrews</span>, the heart of Celestial Solutions. With
-            a decade of digital marketing expertise, James's passion for
-            innovation and dedication to clients have guided our journey. His
-            strategic vision, client-centered approach, and knack for creative
-            solutions shape our commitment to excellence.
+            <span>Sylvia Charley</span>, a visionary leader with 20+ years in
+            IT, excels in development, training, and motivational speaking. A
+            trusted consultant for startups and enterprises, she drives
+            innovation and growth.
           </p>
 
           <div className=" flex xl:flew-row gap-14 xl:w-[80%] items-center justify-center flex-col md:flex-row w-full xl:mx-auto  ">
@@ -82,15 +87,16 @@ function About() {
             </div>
             <div className=" md:pt-26 ">
               <p className="font-satoshi text-white/80 ">
-                J. Andrews, the driving force behind Celestial Solutions. With
-                over a decade of experience in digital marketing, James's
-                passion for innovation and dedication to client success have
-                been the cornerstone of our agency's growth. His strategic
-                vision and hands-on approach have propelled us to the forefront
-                of the industry, while his commitment to transparency and
-                integrity sets the tone for our team. As a respected leader and
-                mentor, James inspires us to exceed expectations and deliver
-                exceptional results for our clients every day.
+                Sylvia Charley is a dynamic leader with over two decades of
+                experience in IT development, training, and motivational
+                speaking. She has worked with startups and established
+                companies, helping them navigate challenges and drive growth
+                through her strategic insights and hands-on approach. A skilled
+                mentor and consultant, Sylvia simplifies complex concepts and
+                inspires professionals to embrace change and continuous
+                learning. Her deep industry knowledge and passion for innovation
+                empower individuals and organizations to unlock their full
+                potential.
               </p>
               <div className="pt-10 gap-4 flex flex-wrap w-[80%] justify-center md:justify-between    mx-auto">
                 {highLights.map(({ text }, index) => (
@@ -98,7 +104,7 @@ function About() {
                 ))}
               </div>
               <div className="pt-10 ">
-                <h2 className="text-white/80">Featured In:</h2>
+                <h2 className="text-white/80">Awards</h2>
                 <Brands />
               </div>
             </div>

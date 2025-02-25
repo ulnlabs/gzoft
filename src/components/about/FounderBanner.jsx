@@ -10,7 +10,7 @@ const FounderBanner = () => {
                 <div className="bg-gradient-to-t absolute bottom-0 w-full md:bottom-0 xl:bottom-10 h-60  z-40 from-black to-transparent"></div>
                 <div className="bg-gradient-to-t absolute bottom-4 w-full md:bottom-0 xl:bottom-6 h-60  z-40 from-black to-transparent"></div>
                 <div className="relative flex bottom-16 justify-center z-2 md:w-[380px] w-[320px] h-[600px] px-4 md:h-[650px]  saturate-0 overflow-hidden">
-                    <img src="/images/Founder.png" alt="Founder Image" className="w-full h-full" />
+                    <img src="/images/Founder.png" width={400} height={600} alt="Founder Image" className="aspect-square" />
                 </div>
             </div>
                 <h2 className="absolute left-3  uppercase xl:bottom-5 bottom-0 z-50  text-4xl leading-10 font-bold">
