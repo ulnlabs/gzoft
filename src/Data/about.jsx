@@ -28,7 +28,7 @@ export const teamMembers = [
     title2: "Software Alchemist",
     name: "Jahangeer I",
     position: "Tech Associate",
-    image: "images/team/Sylvia.png",
+    image: "images/team/jk.png",
     links: ["https://github.com", "#", "#", "#"],
   },
   {
