@@ -1,80 +1,38 @@
 import React from "react";
 import Stats from "../common/Stats";
-import { icons, Rocket, Share2, Target } from "lucide-react";
-import { FaReact } from "react-icons/fa6";
+
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import { useGSAP } from "@gsap/react";
-const whyChooseUs = [
-  {
-    title: "Proven Expertise",
-    description:
-      "Industry-leading IT training and innovative solutions for business growth and success.",
-    icon: <Rocket className="text-primary" />,
-  },
-  {
-    title: "Customized Learning",
-    description:
-      "Hands-on programs with practical skills and real-world experience to help professionals excel.",
-    icon: <Share2 className="text-primary" />,
-  },
-  {
-    title: "Client-Focused Approach",
-    description:
-      "Providing industry-relevant training and IT solutions to boost efficiency and innovation.",
-    icon: <Target className="text-primary" />,
-  },
-];
-const tinyTitle = [
-  {
-    id: 1,
-    name: "Ongoing Advancement",
-    icons: <FaReact className="text-primary" />,
-  },
-  {
-    id: 2,
-    name: "Superior Quality",
-    icons: <FaReact className="text-primary" />,
-  },
-  {
-    id: 3,
-    name: "Reliable Support",
-    icons: <FaReact className="text-primary" />,
-  },
-  {
-    id: 4,
-    name: "Excellence Driven",
-    icons: <FaReact className="text-primary" />,
-  },
-];
+import { whyChooseUs, tinyTitle } from "../../Data/Services";
 
 gsap.registerPlugin(ScrollTrigger);
 
 function ExpServ() {
-  useGSAP(()=>{
-    gsap.to("#ball1",{
-      y:80,
-      scrollTrigger:{
-        trigger:"#exp-serv",
-        start:"top 80%",
-        end:"bottom 30%",
-        scrub:1,
+  useGSAP(() => {
+    gsap.to("#ball1", {
+      y: 80,
+      scrollTrigger: {
+        trigger: "#exp-serv",
+        start: "top 80%",
+        end: "bottom 30%",
+        scrub: 1,
       }
     })
-    gsap.to("#ball3",{
-      y:80,
-      scrollTrigger:{
-        trigger:"#exp-serv",
-        start:"top 80%",
-        end:"bottom 30%",
-        scrub:1,
+    gsap.to("#ball3", {
+      y: 80,
+      scrollTrigger: {
+        trigger: "#exp-serv",
+        start: "top 80%",
+        end: "bottom 30%",
+        scrub: 1,
       }
     })
   })
   return (
-    <div 
-    id="exp-serv"
-    className="full relative bg-[url(/images/exp-service.avif)] bg-cover bg-center bg-no-repeat min-h-screen flex flex-col justify-between items-center pb-[4rem]">
+    <div
+      id="exp-serv"
+      className="full relative bg-[url(/images/exp-service.avif)] bg-cover bg-center bg-no-repeat min-h-screen flex flex-col justify-between items-center pb-[4rem]">
       <div className="absolute h-full w-full bg-radial from-primary/50 to-black/50"></div>
       <div className="flex mx-auto w-fit mt-6 container max-lg:px-4 items-center justify-center">
         <div className="flex items-center justify-center relative max-lg:flex-col left-2">
@@ -108,22 +66,25 @@ function ExpServ() {
       </div>
       <div className="w-full h-full flex flex-col justify-end items-center py-6 container mx-auto max-lg:px-4">
         <div className="flex container mx-auto gap-4 max-md:flex-col">
-          {whyChooseUs.map((item, index) => (
-            <div
-              key={index}
-              className="bg-black/20 backdrop-blur-lg border-[1px] border-gray-50/10  rounded-lg p-6 shadow-md"
-            >
-              <div className="text-orange-500 flex justify-center">
-                {item.icon}
-              </div>
-              <h3 className="text-xl font-semibold text-white mt-4">
-                {item.title}
-              </h3>
-              <p className="text-gray-300 mt-2 font-satoshi">
-                {item.description}
-              </p>
-            </div>
-          ))}
+          {whyChooseUs.map((item, index) => {
+            if (index < 3)
+              return (
+                <div
+                  key={index}
+                  className="bg-black/20 backdrop-blur-lg border-[1px] border-gray-50/10  rounded-lg p-6 shadow-md"
+                >
+                  <div className="text-orange-500 flex justify-center">
+                    {item.icon}
+                  </div>
+                  <h3 className="text-xl font-semibold text-white mt-4">
+                    {item.title}
+                  </h3>
+                  <p className="text-gray-300 mt-2 font-satoshi">
+                    {item.description}
+                  </p>
+                </div>
+              )
+          })}
         </div>
         <div className="flex justify-center flex-wrap container mx-auto gap-4 mt-4">
           {tinyTitle.map((item, index) => (

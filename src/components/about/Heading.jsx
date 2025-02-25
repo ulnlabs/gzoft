@@ -62,7 +62,7 @@ export const Title = ({ text }) => {
       }
     );
   }, [])
-  return <h1 ref={thisRef} className='text-primary  w-fit rounded-full px-4 text-xs font-satoshi font-extrabold bg-white/10 p-2'>{text}</h1>
+  return <h1 ref={thisRef} className={` text-primary  w-fit rounded-full px-4 text-xs font-satoshi font-bold bg-white/10 p-2`}>{text}</h1>
 }
 
 export const InnerHeading = ({ title, heading }) => {
